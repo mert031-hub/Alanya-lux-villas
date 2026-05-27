@@ -1,1958 +1,987 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alanya Luxury Villas | Exclusive Mediterranean Retreats</title>
-  <meta name="description" content="Alanya'nın en prestijli villa kompleksi. Deniz manzaralı özel havuzlar, hamam, sauna, spa ve 5 yıldızlı kişisel hizmet.">
-  <meta property="og:title" content="Alanya Luxury Villas">
-  <meta property="og:description" content="7 ultra-lüks villa, özel havuzlar ve sonsuz Akdeniz manzarası.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alanya Luxury Villas | Exclusive Mediterranean Retreats</title>
+    <meta name="description"
+        content="Alanya'nın en prestijli villa kompleksi. Deniz manzaralı özel havuzlar, hamam, sauna, spa ve 5 yıldızlı kişisel hizmet.">
+    <meta property="og:title" content="Alanya Luxury Villas">
+    <meta property="og:description" content="7 ultra-lüks villa, özel havuzlar ve sonsuz Akdeniz manzarası.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Async font loading — eliminates render-blocking -->
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Async font loading — eliminates render-blocking -->
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
+    </noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="style.css">
 
-  <style>
-    /* ── RESET & TOKENS ────────────────────────────────── */
-    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-    html { scroll-behavior:smooth; overflow-x:hidden; scroll-padding-top:80px; }
-    :root {
-      --bg:   #0B0B0B;
-      --bg2:  #111111;
-      --bg3:  #141414;
-      --gold: #C6A16E;
-      --gold2:#D4B483;
-      --beige:#E7D8C9;
-      --tx:   #F5F5F5;
-      --txm:  #B8B8B8;
-      --txd:  #777777;
-      --olive:#2D3A32;
-      --bdr:  rgba(198,161,110,.18);
-      --bdrh: rgba(198,161,110,.45);
-    }
-    body {
-      background:var(--bg);
-      color:var(--tx);
-      font-family:'Montserrat',sans-serif;
-      font-weight:300;
-      line-height:1.65;
-      overflow-x:hidden;
-    }
-    ::-webkit-scrollbar{ width:3px; }
-    ::-webkit-scrollbar-track{ background:var(--bg); }
-    ::-webkit-scrollbar-thumb{ background:var(--gold); }
-    a { text-decoration:none; color:inherit; }
-    img { display:block; max-width:100%; }
-
-    /* ── TYPOGRAPHY ────────────────────────────────────── */
-    .lbl {
-      font-family:'Montserrat',sans-serif;
-      font-size:.62rem; font-weight:500;
-      letter-spacing:.45em; text-transform:uppercase;
-      color:var(--gold); display:block; margin-bottom:1.1rem;
-    }
-    .hdg {
-      font-family:'Cormorant Garamond',serif; font-weight:300;
-      font-size:clamp(2.4rem,5vw,4.8rem);
-      line-height:1.05; color:var(--tx);
-    }
-    .hdg em { font-style:italic; color:var(--gold); }
-    .sub {
-      font-size:.88rem; font-weight:300;
-      color:var(--txm); line-height:1.85; max-width:520px;
-    }
-
-    /* ── LAYOUT ────────────────────────────────────────── */
-    .wrap { max-width:1380px; margin:0 auto; padding:0 3rem; }
-    @media(max-width:768px){ .wrap{ padding:0 1.4rem; } }
-    .gl { display:block; width:55px; height:1px; background:var(--gold); margin-bottom:1.4rem; }
-
-    /* ── BUTTONS ───────────────────────────────────────── */
-    .btn {
-      display:inline-flex; align-items:center; gap:.7rem;
-      padding:.9rem 2.4rem;
-      border:1px solid var(--gold); color:var(--gold);
-      font-family:'Montserrat',sans-serif;
-      font-size:.62rem; font-weight:500; letter-spacing:.28em; text-transform:uppercase;
-      cursor:pointer; position:relative; overflow:hidden;
-      transition:color .35s ease; background:transparent;
-    }
-    .btn::before {
-      content:''; position:absolute; inset:0 auto 0 -100%;
-      width:100%; background:var(--gold);
-      transition:left .35s ease; z-index:0;
-    }
-    .btn:hover::before { left:0; }
-    .btn:hover { color:var(--bg); }
-    .btn > * { position:relative; z-index:1; }
-    .btn-fill { background:var(--gold); color:var(--bg); }
-    .btn-fill::before { background:rgba(11,11,11,.9); }
-    .btn-fill:hover { color:var(--gold); }
-
-    /* ── LOADING ───────────────────────────────────────── */
-    #loading {
-      position:fixed; inset:0; background:var(--bg); z-index:9999;
-      display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2rem;
-      transition:opacity .9s ease;
-    }
-    #loading.out { opacity:0; pointer-events:none; }
-    .load-logo {
-      font-family:'Cormorant Garamond',serif; font-weight:300;
-      font-size:2.6rem; letter-spacing:.2em; color:var(--tx);
-    }
-    .load-logo span { color:var(--gold); }
-    .load-track { width:180px; height:1px; background:rgba(198,161,110,.2); }
-    .load-bar { height:100%; background:var(--gold); width:0; animation:lbar 2.2s ease forwards; }
-    @keyframes lbar { to{ width:100%; } }
-
-    /* ── NAV ───────────────────────────────────────────── */
-    #nav {
-      position:fixed; top:0; left:0; width:100%; z-index:500;
-      padding:1.8rem 0;
-      transition:background .5s, padding .5s, border-color .5s;
-      border-bottom:1px solid transparent;
-    }
-    #nav.stuck {
-      background:rgba(11,11,11,.94); backdrop-filter:blur(24px);
-      padding:1.15rem 0; border-bottom-color:var(--bdr);
-    }
-    .nav-in {
-      display:flex; align-items:center; justify-content:space-between;
-    }
-    .nav-logo .lg-name {
-      font-family:'Cormorant Garamond',serif; font-size:1.45rem;
-      font-weight:400; letter-spacing:.15em; color:var(--tx);
-    }
-    .nav-logo .lg-name b { color:var(--gold); font-weight:400; }
-    .nav-logo .lg-sub {
-      display:block; font-size:.5rem; letter-spacing:.5em;
-      color:var(--gold); text-transform:uppercase; margin-top:-3px;
-    }
-    .nav-links {
-      display:flex; align-items:center; gap:2.8rem; list-style:none;
-    }
-    .nav-links a {
-      font-size:.62rem; font-weight:400; letter-spacing:.25em;
-      text-transform:uppercase; color:rgba(245,245,245,.78);
-      position:relative; transition:color .3s;
-    }
-    .nav-links a::after {
-      content:''; position:absolute; bottom:-4px; left:0;
-      width:0; height:1px; background:var(--gold); transition:width .3s;
-    }
-    .nav-links a:hover { color:var(--gold); }
-    .nav-links a:hover::after { width:100%; }
-    .nav-res {
-      padding:.62rem 1.6rem; border:1px solid var(--gold);
-      color:var(--gold) !important; font-size:.58rem !important;
-      letter-spacing:.32em !important;
-    }
-    .nav-res::after { display:none !important; }
-    .nav-res:hover { background:var(--gold) !important; color:var(--bg) !important; }
-    .burger {
-      display:none; flex-direction:column; gap:5px;
-      background:none; border:none; cursor:pointer; padding:4px;
-    }
-    .burger span { display:block; width:24px; height:1px; background:var(--tx); transition:.3s; }
-    .burger.open span:nth-child(1){ transform:translateY(6px) rotate(45deg); }
-    .burger.open span:nth-child(2){ opacity:0; }
-    .burger.open span:nth-child(3){ transform:translateY(-6px) rotate(-45deg); }
-    /* Premium slide-in mobile menu */
-    .mob-menu {
-      display:flex; position:fixed; top:0; right:0; bottom:0;
-      width:min(400px,100vw);
-      background:rgba(11,11,11,.98);
-      backdrop-filter:blur(28px); -webkit-backdrop-filter:blur(28px);
-      z-index:490;
-      flex-direction:column; align-items:stretch; justify-content:center;
-      padding:5rem 3rem 3rem;
-      border-left:1px solid var(--bdr);
-      /* Hidden state */
-      opacity:0; visibility:hidden; pointer-events:none;
-      transform:translateX(100%);
-      transition:opacity .5s ease, visibility .5s ease, transform .5s cubic-bezier(.16,1,.3,1);
-    }
-    .mob-menu.open {
-      opacity:1; visibility:visible; pointer-events:auto;
-      transform:translateX(0);
-    }
-    /* Dark backdrop behind panel */
-    .mob-menu::before {
-      content:''; position:fixed; inset:0; right:min(400px,100vw);
-      background:rgba(0,0,0,.55);
-      opacity:0; pointer-events:none;
-      transition:opacity .5s ease;
-    }
-    .mob-menu.open::before { opacity:1; pointer-events:auto; }
-    .mob-nav-links { list-style:none; display:flex; flex-direction:column; gap:0; }
-    .mob-nav-links li {
-      border-bottom:1px solid rgba(198,161,110,.1);
-      opacity:0; transform:translateX(30px);
-      transition:opacity .5s ease, transform .5s ease, color .3s;
-    }
-    .mob-nav-links li:first-child { border-top:1px solid rgba(198,161,110,.1); }
-    .mob-menu.open .mob-nav-links li { opacity:1; transform:translateX(0); }
-    .mob-menu.open .mob-nav-links li:nth-child(1){ transition-delay:.08s; }
-    .mob-menu.open .mob-nav-links li:nth-child(2){ transition-delay:.14s; }
-    .mob-menu.open .mob-nav-links li:nth-child(3){ transition-delay:.20s; }
-    .mob-menu.open .mob-nav-links li:nth-child(4){ transition-delay:.26s; }
-    .mob-menu.open .mob-nav-links li:nth-child(5){ transition-delay:.32s; }
-    .mob-menu.open .mob-nav-links li:nth-child(6){ transition-delay:.38s; }
-    .mob-nav-links a {
-      display:flex; align-items:center; justify-content:space-between;
-      padding:1.2rem 0;
-      font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:300;
-      color:rgba(245,245,245,.75); transition:color .3s, padding .3s;
-    }
-    .mob-nav-links a::after {
-      content:'→'; font-family:'Montserrat',sans-serif; font-size:.7rem;
-      color:var(--gold); opacity:0; transition:opacity .3s, transform .3s;
-      transform:translateX(-8px);
-    }
-    .mob-nav-links a:hover { color:var(--gold); padding-left:.5rem; }
-    .mob-nav-links a:hover::after { opacity:1; transform:translateX(0); }
-    .mob-nav-links a.mob-res {
-      color:var(--gold); font-family:'Montserrat',sans-serif;
-      font-size:.65rem; letter-spacing:.3em; text-transform:uppercase;
-      border:1px solid var(--gold); padding:.9rem 1.5rem; margin-top:1.5rem;
-      justify-content:center;
-    }
-    .mob-nav-links a.mob-res::after { display:none; }
-    .mob-nav-links a.mob-res:hover { background:var(--gold); color:var(--bg); padding-left:1.5rem; }
-    .mob-footer {
-      margin-top:2.5rem; padding-top:2rem; border-top:1px solid var(--bdr);
-      opacity:0; transition:opacity .5s .45s;
-    }
-    .mob-menu.open .mob-footer { opacity:1; }
-    .mob-footer-lbl { font-size:.52rem; letter-spacing:.35em; color:var(--txd); text-transform:uppercase; display:block; margin-bottom:.4rem; }
-    .mob-footer-tel {
-      font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:var(--gold); display:block;
-    }
-    .mob-close {
-      position:absolute; top:1.5rem; right:1.5rem;
-      width:42px; height:42px; border:1px solid var(--bdr);
-      background:none; cursor:pointer; color:var(--txm);
-      display:flex; align-items:center; justify-content:center;
-      transition:.3s; font-size:1rem;
-    }
-    .mob-close:hover { border-color:var(--gold); color:var(--gold); }
-    .mob-logo {
-      font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:400;
-      letter-spacing:.12em; color:var(--tx); margin-bottom:3rem;
-      opacity:0; transition:opacity .5s .05s;
-    }
-    .mob-menu.open .mob-logo { opacity:1; }
-    .mob-logo b { color:var(--gold); font-weight:400; }
-    @media(max-width:1020px){
-      .nav-links{ display:none; }
-      .burger{ display:flex; }
-    }
-    @media(max-width:480px){
-      .mob-menu { padding:5rem 2rem 2rem; width:100%; border-left:none; }
-    }
-
-    /* ── HERO ──────────────────────────────────────────── */
-    #hero {
-      height:100vh; min-height:620px; position:relative;
-      display:flex; align-items:flex-end; padding-bottom:9vh;
-      overflow:hidden;
-    }
-    .hero-vid { position:absolute; inset:0; z-index:0; }
-    #hv { width:100%; height:100%; object-fit:cover; object-position:center; }
-    .hero-over {
-      position:absolute; inset:0; z-index:1;
-      background:linear-gradient(to bottom,
-        rgba(11,11,11,.15) 0%,
-        rgba(11,11,11,.35) 40%,
-        rgba(11,11,11,.72) 70%,
-        rgba(11,11,11,.92) 100%
-      );
-    }
-    .hero-cnt { position:relative; z-index:2; width:100%; }
-    .hero-chip {
-      font-family:'Montserrat',sans-serif; font-size:.6rem; font-weight:500;
-      letter-spacing:.55em; text-transform:uppercase; color:var(--gold);
-      display:inline-flex; align-items:center; gap:.6rem; margin-bottom:1.8rem;
-      opacity:0; animation:fup 1s ease .4s forwards;
-    }
-    .hero-chip::before { content:''; width:30px; height:1px; background:var(--gold); }
-    .hero-title {
-      font-family:'Cormorant Garamond',serif; font-weight:300;
-      font-size:clamp(3.5rem,9.5vw,10rem); line-height:.92;
-      color:var(--tx); margin-bottom:2.2rem; overflow:hidden;
-    }
-    .hl {
-      display:block; opacity:0; transform:translateY(105%);
-      animation:lr 1.3s cubic-bezier(.16,1,.3,1) forwards;
-    }
-    .hl:nth-child(1){ animation-delay:.7s; }
-    .hl:nth-child(2){ animation-delay:.9s; }
-    .hl:nth-child(3){ animation-delay:1.1s; }
-    .hl em { font-style:italic; color:var(--gold); }
-    .hero-desc {
-      font-size:.82rem; font-weight:300; letter-spacing:.06em;
-      color:rgba(245,245,245,.72); margin-bottom:2.6rem; max-width:480px;
-      opacity:0; animation:fup 1s ease 1.5s forwards;
-    }
-    .hero-ctas {
-      display:flex; gap:1.1rem; flex-wrap:wrap;
-      opacity:0; animation:fup 1s ease 1.75s forwards;
-    }
-    .hero-side {
-      position:absolute; right:3rem; top:50%; transform:translateY(-50%);
-      z-index:2; display:flex; flex-direction:column; gap:2.5rem; align-items:flex-end;
-      opacity:0; animation:fin 1s ease 2.2s forwards;
-    }
-    .hs-item { text-align:right; }
-    .hs-num {
-      font-family:'Cormorant Garamond',serif; font-size:2.1rem;
-      font-weight:300; color:var(--tx); line-height:1;
-    }
-    .hs-lbl {
-      font-size:.5rem; letter-spacing:.3em; color:var(--gold); text-transform:uppercase;
-    }
-    .hero-scroll {
-      position:absolute; bottom:3rem; left:50%; transform:translateX(-50%);
-      z-index:2; display:flex; flex-direction:column; align-items:center; gap:.7rem;
-      opacity:0; animation:fin 1s ease 2.6s forwards;
-    }
-    .scroll-txt {
-      font-size:.5rem; letter-spacing:.45em; color:var(--gold); text-transform:uppercase;
-    }
-    .scroll-ln {
-      width:1px; height:55px;
-      background:linear-gradient(to bottom,var(--gold),transparent);
-      animation:scl 2s ease-in-out infinite;
-    }
-    @keyframes fup { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:none} }
-    @keyframes fin  { from{opacity:0} to{opacity:1} }
-    @keyframes lr   { from{opacity:0;transform:translateY(105%)} to{opacity:1;transform:none} }
-    @keyframes scl  { 0%,100%{transform:scaleY(1);transform-origin:top} 50%{transform:scaleY(.4);transform-origin:top} }
-    @media(max-width:768px){
-      .hero-side{ display:none; }
-      .hero-scroll{ display:none; }
-    }
-
-    /* ── INTRO STRIP ────────────────────────────────────── */
-    #strip {
-      background:var(--gold); padding:1.2rem 0; overflow:hidden;
-    }
-    .strip-inner {
-      display:flex; gap:3rem; align-items:center;
-      font-family:'Montserrat',sans-serif; font-size:.58rem;
-      font-weight:600; letter-spacing:.4em; text-transform:uppercase;
-      color:var(--bg); white-space:nowrap;
-      animation:ticker 30s linear infinite;
-    }
-    .strip-inner span::before { content:'✦'; margin-right:1rem; }
-    @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-
-    /* ── ABOUT ──────────────────────────────────────────── */
-    #about { padding:10rem 0; background:var(--bg2); }
-    .about-grid {
-      display:grid; grid-template-columns:1fr 1fr; gap:8rem; align-items:center;
-    }
-    .about-imgs { position:relative; }
-    .about-main {
-      width:100%; aspect-ratio:4/5.2; object-fit:cover;
-    }
-    .about-accent {
-      position:absolute; bottom:-3rem; right:-3rem;
-      width:52%; aspect-ratio:4/3; object-fit:cover;
-      border:4px solid var(--bg2);
-    }
-    .about-badge {
-      position:absolute; top:2rem; left:-2rem;
-      width:105px; height:105px; background:var(--gold);
-      display:flex; flex-direction:column; align-items:center; justify-content:center;
-    }
-    .badge-n {
-      font-family:'Cormorant Garamond',serif; font-size:2.4rem;
-      font-weight:400; color:var(--bg); line-height:1;
-    }
-    .badge-t {
-      font-size:.47rem; font-weight:600; letter-spacing:.18em;
-      color:var(--bg); text-transform:uppercase; text-align:center;
-    }
-    .about-text { padding-right:1rem; }
-    .about-body { font-size:.88rem; color:var(--txm); line-height:1.9; margin:1.5rem 0 2.5rem; }
-    .about-nums {
-      display:grid; grid-template-columns:repeat(3,1fr); gap:2rem;
-      border-top:1px solid var(--bdr); padding-top:2.5rem; margin-top:2.5rem;
-    }
-    .an-n {
-      font-family:'Cormorant Garamond',serif; font-size:2.8rem;
-      font-weight:300; color:var(--gold); line-height:1; display:block;
-    }
-    .an-l { font-size:.58rem; letter-spacing:.2em; color:var(--txm); text-transform:uppercase; }
-    @media(max-width:1020px){
-      .about-grid{ grid-template-columns:1fr; gap:4rem; }
-      .about-text{ padding-right:0; }
-      .about-accent{ bottom:-1.5rem; right:-.5rem; }
-    }
-
-    /* ── GALLERY SLIDER ─────────────────────────────────── */
-    #gallery { padding:10rem 0; background:var(--bg); }
-    .gal-hd {
-      display:flex; justify-content:space-between; align-items:flex-end;
-      margin-bottom:3.5rem; flex-wrap:wrap; gap:1.5rem;
-    }
-    .gal-nav { display:flex; gap:.8rem; }
-    .gn-btn {
-      width:48px; height:48px; border:1px solid var(--bdr);
-      background:transparent; cursor:pointer; display:flex;
-      align-items:center; justify-content:center;
-      color:var(--txm); transition:.3s;
-    }
-    .gn-btn:hover { border-color:var(--gold); color:var(--gold); }
-    .gn-btn svg { width:18px; height:18px; }
-    .gal-sw { overflow:hidden; }
-    .gal-sw .swiper-slide { height:62vh; min-height:380px; }
-    .gal-si {
-      width:100%; height:100%; overflow:hidden; position:relative; cursor:pointer;
-    }
-    .gal-si img {
-      width:100%; height:100%; object-fit:cover; transition:transform .75s ease;
-    }
-    .gal-si:hover img { transform:scale(1.06); }
-    .gal-ov {
-      position:absolute; inset:0;
-      background:linear-gradient(to top,rgba(11,11,11,.65),transparent 55%);
-      opacity:0; transition:opacity .4s; display:flex; align-items:flex-end; padding:1.2rem;
-    }
-    .gal-si:hover .gal-ov { opacity:1; }
-    .gal-exp {
-      width:36px; height:36px; border:1px solid rgba(255,255,255,.55);
-      display:flex; align-items:center; justify-content:center; transition:.3s;
-    }
-    .gal-exp:hover { background:var(--gold); border-color:var(--gold); }
-    .gal-exp svg { width:14px; height:14px; color:#fff; }
-    .gal-count {
-      margin-top:1.5rem; text-align:right;
-      font-size:.58rem; letter-spacing:.3em; color:var(--txd); text-transform:uppercase;
-    }
-    /* Masonry below slider */
-    #masonry { padding:0 0 10rem; background:var(--bg); }
-    .mas-grid {
-      columns:4 250px; column-gap:6px;
-    }
-    .mas-it {
-      break-inside:avoid; margin-bottom:6px; overflow:hidden; cursor:pointer; position:relative;
-    }
-    .mas-it img { width:100%; display:block; transition:transform .6s; }
-    .mas-it:hover img { transform:scale(1.06); }
-    .mas-ov {
-      position:absolute; inset:0; background:rgba(198,161,110,.5);
-      opacity:0; transition:opacity .4s;
-      display:flex; align-items:center; justify-content:center;
-    }
-    .mas-it:hover .mas-ov { opacity:1; }
-    .mas-ov svg { width:28px; height:28px; color:#fff; }
-
-    /* ── VIDEO EXPERIENCE ───────────────────────────────── */
-    #vx { background:var(--bg); }
-    .vx-hero {
-      position:relative; height:82vh; min-height:500px; overflow:hidden;
-    }
-    .vx-bg { width:100%; height:100%; object-fit:cover; }
-    .vx-over {
-      position:absolute; inset:0; background:rgba(11,11,11,.52);
-      display:flex; align-items:center; justify-content:center; flex-direction:column; gap:2rem;
-    }
-    .vx-play {
-      width:88px; height:88px; border-radius:50%;
-      border:2px solid rgba(255,255,255,.65);
-      display:flex; align-items:center; justify-content:center;
-      cursor:pointer; transition:.4s;
-      background:rgba(255,255,255,.08); backdrop-filter:blur(8px);
-    }
-    .vx-play:hover { border-color:var(--gold); background:rgba(198,161,110,.22); transform:scale(1.1); }
-    .vx-play svg { width:26px; height:26px; color:#fff; margin-left:4px; }
-    .vx-title {
-      font-family:'Cormorant Garamond',serif; font-weight:300; font-style:italic;
-      font-size:clamp(1.8rem,3.5vw,3rem); color:var(--tx); text-align:center;
-      letter-spacing:.06em;
-    }
-    /* Video tabs */
-    .vx-tabs { padding:5rem 0; background:var(--bg2); }
-    .vx-tab-btns {
-      display:flex; justify-content:center; margin-bottom:2.5rem; border:1px solid var(--bdr);
-    }
-    .vtb {
-      flex:1; max-width:260px; padding:.9rem 1.5rem;
-      background:transparent; border:none; border-right:1px solid var(--bdr);
-      color:var(--txm); font-family:'Montserrat',sans-serif;
-      font-size:.6rem; letter-spacing:.3em; text-transform:uppercase;
-      cursor:pointer; transition:.3s;
-    }
-    .vtb:last-child { border-right:none; }
-    .vtb.act, .vtb:hover { background:var(--gold); color:var(--bg); }
-    .vtp { display:none; }
-    .vtp.act { display:block; }
-    .vtp video { width:100%; max-height:68vh; object-fit:cover; }
-
-    /* ── AMENITIES ──────────────────────────────────────── */
-    #amenities { padding:10rem 0; background:var(--bg); }
-    .am-hd { text-align:center; margin-bottom:5.5rem; }
-    .am-hd .sub { margin:0 auto; }
-    .am-grid {
-      display:grid; grid-template-columns:repeat(4,1fr);
-      border:1px solid var(--bdr);
-    }
-    .am-card {
-      padding:3rem 2rem; border-right:1px solid var(--bdr);
-      border-bottom:1px solid var(--bdr); text-align:center;
-      transition:background .4s;
-    }
-    .am-card:nth-child(4n){ border-right:none; }
-    .am-card:hover { background:rgba(198,161,110,.05); }
-    .am-ico { width:46px; height:46px; margin:0 auto 1.1rem; color:var(--gold); }
-    .am-ico svg { width:100%; height:100%; }
-    .am-nm {
-      font-family:'Cormorant Garamond',serif; font-size:1.15rem;
-      font-weight:400; color:var(--tx); margin-bottom:.45rem;
-    }
-    .am-ds { font-size:.73rem; color:var(--txd); line-height:1.65; }
-    @media(max-width:1020px){
-      .am-grid{ grid-template-columns:repeat(3,1fr); }
-      .am-card:nth-child(4n){ border-right:1px solid var(--bdr); }
-      .am-card:nth-child(3n){ border-right:none; }
-    }
-    @media(max-width:640px){
-      .am-grid{ grid-template-columns:repeat(2,1fr); }
-      .am-card:nth-child(3n){ border-right:1px solid var(--bdr); }
-      .am-card:nth-child(2n){ border-right:none; }
-    }
-
-    /* ── LIFESTYLE ──────────────────────────────────────── */
-    #life { padding:10rem 0; background:var(--bg2); }
-    .life-hd { margin-bottom:4rem; }
-    .life-grid {
-      display:grid; grid-template-columns:1fr 1fr;
-      grid-template-rows:auto auto; gap:4px;
-    }
-    .li { position:relative; overflow:hidden; cursor:pointer; }
-    .li-tall { grid-row:span 2; }
-    .li img { width:100%; height:100%; min-height:320px; object-fit:cover; transition:transform .8s; }
-    .li:hover img { transform:scale(1.05); }
-    .li-cap {
-      position:absolute; bottom:0; left:0; right:0;
-      padding:2rem 1.75rem;
-      background:linear-gradient(to top,rgba(11,11,11,.75),transparent);
-      transform:translateY(8px); opacity:0; transition:.4s;
-    }
-    .li:hover .li-cap { opacity:1; transform:none; }
-    .li-cap-ttl {
-      font-family:'Cormorant Garamond',serif; font-size:1.4rem;
-      font-weight:300; color:var(--tx); font-style:italic;
-    }
-    @media(max-width:768px){
-      .life-grid{ grid-template-columns:1fr; }
-      .li-tall{ grid-row:span 1; }
-    }
-
-    /* ── REVIEWS ────────────────────────────────────────── */
-    #reviews { padding:10rem 0; background:var(--bg); }
-    .rv-hd { text-align:center; margin-bottom:5rem; }
-    .rv-badge {
-      display:inline-flex; flex-direction:column; align-items:center;
-      gap:.45rem; padding:2rem 3rem; border:1px solid var(--bdr); margin-bottom:2.5rem;
-    }
-    .rv-n {
-      font-family:'Cormorant Garamond',serif; font-size:4.5rem;
-      font-weight:300; color:var(--gold); line-height:1;
-    }
-    .rv-stars { color:var(--gold); letter-spacing:.2em; }
-    .rv-cnt { font-size:.6rem; letter-spacing:.35em; color:var(--txm); text-transform:uppercase; }
-    .rv-sw { padding-bottom:3rem !important; }
-    .rv-card {
-      background:var(--bg3); border:1px solid var(--bdr); padding:2.4rem;
-      height:auto !important;
-    }
-    .rv-ch {
-      display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem;
-    }
-    .rv-av {
-      width:44px; height:44px; border-radius:50%; background:var(--gold);
-      display:flex; align-items:center; justify-content:center; flex-shrink:0;
-      font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:var(--bg);
-    }
-    .rv-name {
-      font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:400; color:var(--tx);
-    }
-    .rv-meta { font-size:.62rem; color:var(--txd); }
-    .rv-s { color:var(--gold); font-size:.78rem; letter-spacing:.1em; margin-bottom:.9rem; }
-    .rv-txt { font-size:.83rem; color:var(--txm); line-height:1.85; font-style:italic; }
-    .rv-sw .swiper-pagination-bullet { background:var(--txd); opacity:1; }
-    .rv-sw .swiper-pagination-bullet-active { background:var(--gold); }
-
-    /* ── ATTRACTIONS ────────────────────────────────────── */
-    #attract { padding:10rem 0; background:var(--bg2); }
-    .att-hd { text-align:center; margin-bottom:5rem; }
-    .att-grid {
-      display:grid; grid-template-columns:repeat(5,1fr); gap:1.2rem;
-    }
-    .att-card {
-      background:var(--bg3); border:1px solid var(--bdr);
-      padding:2rem 1.4rem; transition:.4s; position:relative; overflow:hidden;
-    }
-    .att-card::before {
-      content:''; position:absolute; top:0; left:0; width:3px;
-      height:0; background:var(--gold); transition:height .4s;
-    }
-    .att-card:hover::before { height:100%; }
-    .att-card:hover { border-color:var(--bdrh); transform:translateY(-6px); }
-    .att-no {
-      font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:300;
-      color:rgba(198,161,110,.12); line-height:1; margin-bottom:.8rem;
-    }
-    .att-nm {
-      font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:400;
-      color:var(--tx); margin-bottom:.65rem; line-height:1.25;
-    }
-    .att-ds { font-size:.73rem; color:var(--txd); line-height:1.7; margin-bottom:1.1rem; }
-    .att-rt {
-      display:inline-flex; align-items:center; gap:.35rem;
-      font-size:.62rem; color:var(--gold);
-    }
-    .att-rt svg { width:12px; height:12px; }
-    .att-ti { font-size:.62rem; color:var(--txd); margin-top:.5rem; }
-    @media(max-width:1200px){ .att-grid{ grid-template-columns:repeat(3,1fr); } }
-    @media(max-width:640px) { .att-grid{ grid-template-columns:1fr 1fr; } }
-    @media(max-width:420px) { .att-grid{ grid-template-columns:1fr; } }
-
-    /* ── INSTAGRAM ──────────────────────────────────────── */
-    #insta { padding:10rem 0; background:var(--bg); }
-    .ig-hd { text-align:center; margin-bottom:3.5rem; }
-    .ig-handle {
-      display:inline-flex; align-items:center; gap:.7rem;
-      padding:.7rem 2rem; border:1px solid var(--bdr); color:var(--gold);
-      font-size:.7rem; letter-spacing:.22em; font-family:'Montserrat',sans-serif;
-      transition:.3s; margin:0 auto 3.5rem; display:table;
-    }
-    .ig-handle:hover { background:var(--gold); color:var(--bg); }
-    .ig-handle svg { width:16px; height:16px; }
-    .ig-grid {
-      display:grid; grid-template-columns:repeat(5,1fr);
-      grid-template-rows:repeat(2,1fr); gap:4px;
-    }
-    .ig-it { position:relative; overflow:hidden; aspect-ratio:1; cursor:pointer; }
-    .ig-it:first-child { grid-column:span 2; grid-row:span 2; aspect-ratio:auto; }
-    .ig-it img { width:100%; height:100%; object-fit:cover; transition:transform .6s; }
-    .ig-it:hover img { transform:scale(1.08); }
-    .ig-ov {
-      position:absolute; inset:0; background:rgba(198,161,110,.55);
-      opacity:0; transition:.4s;
-      display:flex; align-items:center; justify-content:center;
-    }
-    .ig-it:hover .ig-ov { opacity:1; }
-    .ig-ov svg { width:30px; height:30px; color:#fff; }
-    @media(max-width:768px){
-      .ig-grid{ grid-template-columns:repeat(3,1fr); grid-template-rows:auto; }
-      .ig-it:first-child{ grid-column:span 1; grid-row:span 1; aspect-ratio:1; }
-    }
-
-    /* ── MAP ────────────────────────────────────────────── */
-    #mapx { padding:10rem 0; background:var(--bg2); }
-    .map-grid { display:grid; grid-template-columns:1fr 1.6fr; gap:6rem; align-items:center; }
-    .map-info-items { display:flex; flex-direction:column; gap:1.4rem; margin-top:2.2rem; }
-    .mi { display:flex; gap:1rem; align-items:flex-start; }
-    .mi-ico { width:20px; height:20px; color:var(--gold); flex-shrink:0; margin-top:2px; }
-    .mi-lbl { font-size:.58rem; letter-spacing:.25em; color:var(--gold); text-transform:uppercase; display:block; margin-bottom:.2rem; }
-    .mi-val { font-size:.83rem; color:var(--txm); }
-    .map-frame {
-      width:100%; height:440px; border:0;
-      filter:grayscale(85%) contrast(1.1) brightness(.68);
-      transition:filter .5s;
-    }
-    .map-frame:hover { filter:grayscale(20%) contrast(1) brightness(.88); }
-    @media(max-width:1020px){
-      .map-grid{ grid-template-columns:1fr; gap:3rem; }
-    }
-
-    /* ── CONTACT ────────────────────────────────────────── */
-    #contact {
-      padding:10rem 0; background:var(--bg); position:relative;
-    }
-    #contact::before {
-      content:''; position:absolute; top:0; left:0; right:0;
-      height:1px; background:linear-gradient(to right,transparent,var(--gold),transparent);
-    }
-    /* Single-column contact — form removed */
-    .con-grid { max-width:820px; margin:0 auto; }
-    .con-info {
-      margin-top:2.5rem;
-      display:grid; grid-template-columns:1fr 1fr; column-gap:4rem;
-    }
-    .ci { padding:1.5rem 0; border-bottom:1px solid var(--bdr); }
-    .ci:nth-child(1),.ci:nth-child(2) { border-top:1px solid var(--bdr); }
-
-    /* ── FOOTER ─────────────────────────────────────────── */
-    #footer { background:#080808; padding:5.5rem 0 3rem; border-top:1px solid var(--bdr); }
-    .ft-grid {
-      display:grid; grid-template-columns:2fr 1fr 1fr 1fr;
-      gap:4rem; padding-bottom:4rem; border-bottom:1px solid var(--bdr);
-    }
-    .ft-brand p { font-size:.78rem; color:var(--txd); line-height:1.85; margin-top:1.4rem; max-width:270px; }
-    .ft-soc { display:flex; gap:.8rem; margin-top:2rem; }
-    .ft-sl {
-      width:36px; height:36px; border:1px solid var(--bdr);
-      display:flex; align-items:center; justify-content:center;
-      color:var(--txm); transition:.3s;
-    }
-    .ft-sl:hover { border-color:var(--gold); color:var(--gold); }
-    .ft-sl svg { width:15px; height:15px; }
-    .ft-col h4 {
-      font-family:'Montserrat',sans-serif; font-size:.58rem;
-      letter-spacing:.4em; color:var(--gold); text-transform:uppercase; margin-bottom:1.4rem;
-    }
-    .ft-col ul { list-style:none; display:flex; flex-direction:column; gap:.7rem; }
-    .ft-col ul li a { font-size:.78rem; color:var(--txd); transition:color .3s; }
-    .ft-col ul li a:hover { color:var(--gold); }
-    .ft-bot {
-      display:flex; justify-content:space-between; align-items:center;
-      padding-top:2rem; flex-wrap:wrap; gap:1rem;
-    }
-    .ft-bot p { font-size:.68rem; color:var(--txd); letter-spacing:.05em; }
-    @media(max-width:1020px){ .ft-grid{ grid-template-columns:1fr 1fr; } }
-    @media(max-width:600px) { .ft-grid{ grid-template-columns:1fr; gap:2.5rem; } }
-
-    /* ── SECTION SEPARATOR ──────────────────────────────── */
-    .sep { width:100%; height:1px; background:linear-gradient(to right,transparent,var(--bdr),transparent); }
-
-    /* ── GLightbox overrides ────────────────────────────── */
-    .glightbox-clean .gnext,
-    .glightbox-clean .gprev { background:rgba(198,161,110,.8); }
-
-    /* ══════════════════════════════════════════════════════
-       COMPREHENSIVE RESPONSIVE REFINEMENTS
-    ══════════════════════════════════════════════════════ */
-
-    /* ── NAV MOBILE SMALL ── */
-    @media(max-width:480px){
-      .nav-logo .lg-name { font-size:1.05rem; letter-spacing:.08em; }
-      .nav-logo .lg-sub  { font-size:.42rem;  letter-spacing:.28em; }
-      #nav      { padding:1.2rem 0; }
-      #nav.stuck{ padding:.85rem 0; }
-    }
-
-    /* ── SECTION PADDING SCALE DOWN ── */
-    @media(max-width:1024px){
-      #about, #gallery, #amenities, #life,
-      #reviews, #attract, #insta, #mapx, #contact { padding:7rem 0; }
-      #masonry  { padding:0 0 7rem; }
-      .vx-tabs  { padding:4rem 0; }
-      #footer   { padding:4rem 0 2.5rem; }
-    }
-    @media(max-width:768px){
-      #about, #gallery, #amenities, #life,
-      #reviews, #attract, #insta, #mapx, #contact { padding:5rem 0; }
-      #masonry  { padding:0 0 5rem; }
-      .vx-tabs  { padding:3rem 0; }
-      #footer   { padding:3.5rem 0 2rem; }
-      .am-hd    { margin-bottom:3rem; }
-      .rv-hd    { margin-bottom:3rem; }
-      .att-hd   { margin-bottom:3rem; }
-      .ig-hd    { margin-bottom:2.5rem; }
-    }
-    @media(max-width:480px){
-      #about, #gallery, #amenities, #life,
-      #reviews, #attract, #insta, #mapx, #contact { padding:4rem 0; }
-      #masonry  { padding:0 0 4rem; }
-    }
-
-    /* ── HERO MOBILE ── */
-    @media(max-width:768px){
-      #hero { padding-bottom:7vh; min-height:100svh; }
-      .hero-title { font-size:clamp(2.8rem,12vw,5rem); margin-bottom:1.4rem; }
-      .hero-desc  { font-size:.76rem; margin-bottom:2rem; }
-      .hero-ctas  { flex-direction:column; gap:.75rem; }
-      .hero-ctas .btn { justify-content:center; text-align:center; width:100%; max-width:280px; }
-      .hero-chip  { margin-bottom:1.2rem; }
-    }
-    @media(max-width:480px){
-      .hero-chip  { font-size:.5rem; letter-spacing:.28em; }
-      .hero-title { font-size:clamp(2.4rem,13vw,3.5rem); }
-      .hero-desc  { font-size:.73rem; max-width:100%; }
-    }
-
-    /* ── ABOUT OVERFLOW FIX ── */
-    .about-imgs { overflow:visible; }
-    @media(max-width:1020px){
-      .about-grid  { gap:3rem; }
-      .about-imgs  {
-        overflow:hidden; padding-bottom:0;
-        /* Clip so accent image doesn't bleed out */
-        clip-path:none;
-      }
-      .about-accent{
-        position:relative; bottom:auto; right:auto;
-        width:60%; margin-top:.5rem; margin-left:auto;
-        aspect-ratio:4/3; border:3px solid var(--bg2);
-      }
-      .about-badge {
-        top:.75rem; left:.75rem;
-        width:80px; height:80px;
-      }
-      .badge-n { font-size:1.8rem; }
-      .badge-t { font-size:.42rem; }
-      .about-nums { gap:1rem; }
-    }
-    @media(max-width:768px){
-      .about-accent { width:50%; }
-      .an-n { font-size:2.2rem; }
-      .about-body { font-size:.83rem; }
-    }
-    @media(max-width:480px){
-      .about-accent { display:none; }  /* Hide overlapping accent on very small screens */
-      .about-badge  { top:.5rem; left:.5rem; width:68px; height:68px; }
-      .badge-n      { font-size:1.5rem; }
-      .about-nums   { grid-template-columns:repeat(3,1fr); gap:.75rem; }
-      .an-n         { font-size:1.8rem; }
-      .an-l         { font-size:.5rem; }
-    }
-
-    /* ── GALLERY MOBILE ── */
-    @media(max-width:1024px){
-      .gal-sw .swiper-slide { height:55vw; min-height:300px; }
-    }
-    @media(max-width:768px){
-      .gal-sw .swiper-slide { height:62vw; min-height:240px; }
-      .gal-hd    { margin-bottom:2rem; }
-      .gal-count { font-size:.52rem; }
-      .mas-grid  { columns:2 140px; column-gap:4px; }
-      .mas-it    { margin-bottom:4px; }
-    }
-    @media(max-width:480px){
-      .gal-sw .swiper-slide { height:70vw; min-height:200px; }
-      .mas-grid  { columns:2; column-gap:3px; }
-      .mas-it    { margin-bottom:3px; }
-    }
-
-    /* ── VIDEO SECTION MOBILE ── */
-    @media(max-width:768px){
-      .vx-hero   { height:60vh; min-height:300px; }
-      .vx-title  { font-size:clamp(1.4rem,5vw,2rem); padding:0 1rem; }
-      .vx-play   { width:72px; height:72px; }
-      .vx-tab-btns {
-        flex-wrap:wrap; border:1px solid var(--bdr); border-radius:0;
-      }
-      .vtb { max-width:none; flex:1 1 45%; border-bottom:1px solid var(--bdr); }
-      .vtb:last-child { border-right:none; }
-    }
-    @media(max-width:480px){
-      .vx-hero  { height:55vh; min-height:260px; }
-      .vtb      { flex:1 1 100%; border-right:none !important; }
-      .vtp video{ max-height:60vw; }
-    }
-
-    /* ── AMENITIES MOBILE ── */
-    @media(max-width:768px){
-      .am-card { padding:2rem 1.25rem; }
-      .am-ico  { width:38px; height:38px; margin-bottom:.9rem; }
-      .am-nm   { font-size:1.05rem; }
-      .am-ds   { font-size:.7rem; }
-    }
-    @media(max-width:480px){
-      .am-card { padding:1.6rem 1rem; }
-      .am-ico  { width:32px; height:32px; }
-      .am-nm   { font-size:.95rem; }
-    }
-
-    /* ── LIFESTYLE MOBILE ── */
-    @media(max-width:768px){
-      .li img  { min-height:220px; }
-      /* Always show caption on touch */
-      .li-cap  { opacity:1; transform:none; background:linear-gradient(to top,rgba(11,11,11,.7),transparent 60%); }
-    }
-    @media(max-width:480px){
-      .life-hd { margin-bottom:2.5rem; }
-    }
-
-    /* ── REVIEWS MOBILE ── */
-    @media(max-width:768px){
-      .rv-badge { padding:1.5rem 2rem; }
-      .rv-n     { font-size:3.5rem; }
-      .rv-card  { padding:1.75rem 1.25rem; }
-      .rv-txt   { font-size:.8rem; }
-    }
-    @media(max-width:480px){
-      .rv-badge { padding:1.25rem 1.5rem; }
-      .rv-n     { font-size:3rem; }
-    }
-
-    /* ── ATTRACTIONS MOBILE ── */
-    @media(max-width:768px){
-      .att-card { padding:1.75rem 1.2rem; }
-      .att-no   { font-size:2.2rem; }
-      .att-nm   { font-size:1.1rem; }
-    }
-
-    /* ── INSTAGRAM MOBILE ── */
-    @media(max-width:640px){
-      .ig-grid {
-        grid-template-columns:repeat(3,1fr);
-        grid-template-rows:auto;
-        gap:3px;
-      }
-      .ig-it:first-child { grid-column:span 1; grid-row:span 1; aspect-ratio:1; }
-    }
-    @media(max-width:420px){
-      .ig-grid { grid-template-columns:1fr 1fr; gap:3px; }
-    }
-
-    /* ── MAP MOBILE ── */
-    @media(max-width:768px){
-      .map-frame  { height:280px; }
-      .map-grid   { gap:2.5rem; }
-    }
-    @media(max-width:480px){
-      .map-frame  { height:230px; }
-    }
-
-    /* ── CONTACT MOBILE ── */
-    @media(max-width:640px){
-      .con-info { grid-template-columns:1fr; column-gap:0; }
-    }
-
-    /* ── FOOTER MOBILE ── */
-    @media(max-width:480px){
-      .ft-bot { flex-direction:column; text-align:center; gap:.6rem; }
-      .ft-soc { justify-content:flex-start; }
-    }
-
-    /* ── TICKER STRIP MOBILE ── */
-    @media(max-width:480px){
-      .strip-inner { font-size:.5rem; letter-spacing:.22em; gap:1.8rem; }
-    }
-
-    /* ── LOADING MOBILE ── */
-    @media(max-width:480px){
-      .load-logo  { font-size:1.7rem; letter-spacing:.12em; }
-      .load-track { width:140px; }
-    }
-
-    /* ── GLOBAL OVERFLOW GUARD ── */
-    section, footer, nav, header { max-width:100vw; }
-    img, video, iframe { max-width:100%; }
-
-    /* ── IMAGE RENDERING FIXES (CLS-safe, no distortion) ────── */
-    /* gal-si is an <a> → must be display:block for height:100% to resolve */
-    .gal-si { display:block; }
-    /* Reinforce the container fill — object-fit:cover is already set but
-       height:auto as a fallback was interfering; lock to 100% */
-    .gal-si img {
-      width:100%; height:100% !important;
-      object-fit:cover !important; display:block;
-    }
-    /* Masonry: images must flow at their natural height — never stretch */
-    .mas-it img {
-      width:100%; height:auto !important;
-      object-fit:initial; display:block;
-    }
-    /* About + lifestyle: already have aspect-ratio/object-fit, reinforce */
-    .about-main, .about-accent { display:block; }
-    .li img { width:100%; height:100%; object-fit:cover; display:block; }
-
-    /* ── GALLERY CINEMATIC ENHANCEMENTS ── */
-    .gal-si img {
-      filter:brightness(.97) saturate(1.05);
-      will-change:transform, filter;
-    }
-    .gal-si:hover img {
-      transform:scale(1.06);
-      filter:brightness(1.03) saturate(1.1);
-    }
-    /* Counter with leading line */
-    .gal-count {
-      display:flex; align-items:center; gap:1rem; justify-content:flex-end;
-    }
-    .gal-count::before {
-      content:''; display:block; flex:1; max-width:80px;
-      height:1px; background:var(--bdr);
-    }
-    /* Masonry depth stagger */
-    .mas-it:nth-child(odd)  { margin-top:0; }
-    .mas-it:nth-child(4n+2) { margin-top:1.5rem; }
-    .mas-it:nth-child(4n+4) { margin-top:-.8rem; }
-    /* Masonry item inner glow */
-    .mas-it::after {
-      content:''; position:absolute; inset:0;
-      background:linear-gradient(to top,rgba(198,161,110,.08),transparent 50%);
-      opacity:0; transition:opacity .45s; pointer-events:none;
-    }
-    .mas-it:hover::after { opacity:1; }
-    /* Glassmorphism overlay on gallery hover */
-    .gal-si:hover .gal-exp {
-      background:rgba(198,161,110,.15);
-      backdrop-filter:blur(10px);
-      border-color:var(--gold);
-    }
-
-    /* ── TOUCH / HOVER:NONE DEVICE FIXES ── */
-    @media(hover:none) and (pointer:coarse){
-      /* Disable hover-only transforms on touch — prevents stuck states */
-      .gal-si:hover img       { transform:none; }
-      .mas-it:hover img       { transform:none; }
-      .ig-it:hover img        { transform:none; }
-      .att-card:hover         { transform:none; }
-      .li:hover img           { transform:none; }
-      /* Always show gallery expand icon */
-      .gal-ov { opacity:1; }
-      .gal-exp { opacity:.8; }
-      /* Always visible lifestyle captions */
-      .li-cap { opacity:1; transform:none; }
-    }
-
-    /* ── SMOOTH BUTTON TOUCH ── */
-    @media(max-width:768px){
-      .btn { padding:.85rem 1.8rem; font-size:.58rem; }
-    }
-
-    /* ══════════════════════════════════════════════════════
-       WHATSAPP FLOATING ACTION BUTTON
-    ══════════════════════════════════════════════════════ */
-    .wa-fab {
-      position:fixed; bottom:2rem; right:2rem; z-index:380;
-      width:52px; height:52px; border-radius:50%;
-      background:rgba(11,11,11,.97);
-      border:1px solid rgba(198,161,110,.28);
-      display:flex; align-items:center; justify-content:center;
-      cursor:pointer; text-decoration:none;
-      box-shadow:0 4px 24px rgba(0,0,0,.45);
-      backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
-      transition:transform .38s cubic-bezier(.16,1,.3,1),
-                 box-shadow .38s ease,
-                 border-color .38s ease;
-    }
-    .wa-fab:hover {
-      transform:scale(1.11);
-      box-shadow:0 6px 32px rgba(198,161,110,.22), 0 0 0 1px rgba(198,161,110,.35);
-      border-color:rgba(198,161,110,.6);
-    }
-    .wa-fab svg { width:26px; height:26px; fill:var(--gold); transition:fill .3s; }
-    .wa-fab:hover svg { fill:var(--gold2); }
-    /* Subtle online-indicator dot (gold, slow pulse) */
-    .wa-fab::after {
-      content:''; position:absolute; top:4px; right:4px;
-      width:9px; height:9px; border-radius:50%;
-      background:var(--gold);
-      border:1.5px solid rgba(11,11,11,.95);
-      animation:waPulse 2.8s ease-in-out infinite;
-    }
-    @keyframes waPulse {
-      0%,100% { opacity:1; transform:scale(1); }
-      50%      { opacity:.45; transform:scale(.8); }
-    }
-    /* Comfortable tap target on all mobile sizes */
-    @media(max-width:768px){
-      .wa-fab { width:58px; height:58px; }
-      .wa-fab svg { width:29px; height:29px; }
-      .wa-fab::after { top:5px; right:5px; width:10px; height:10px; }
-    }
-    @media(max-width:480px){
-      .wa-fab { bottom:1.4rem; right:1.2rem; width:56px; height:56px; }
-      .wa-fab svg { width:27px; height:27px; }
-    }
-
-    /* ══════════════════════════════════════════════════════
-       STICKY BOOK NOW BAR
-    ══════════════════════════════════════════════════════ */
-    .book-bar {
-      position:fixed;
-      bottom:2rem;
-      left:50%;
-      transform:translateX(-50%) translateY(20px);
-      z-index:360; /* below WA FAB (380) and nav (500) */
-      display:inline-flex; align-items:center; gap:.65rem;
-      padding:.8rem 2.2rem;
-      background:rgba(11,11,11,.97);
-      border:1px solid rgba(198,161,110,.38);
-      border-radius:100px;
-      backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
-      box-shadow:0 4px 28px rgba(0,0,0,.45);
-      color:var(--gold);
-      font-family:'Montserrat',sans-serif;
-      font-size:.6rem; font-weight:500; letter-spacing:.32em; text-transform:uppercase;
-      white-space:nowrap;
-      text-decoration:none;
-      /* safe distance from WA FAB on narrow screens */
-      max-width:calc(100vw - 90px);
-      /* hidden by default */
-      opacity:0; pointer-events:none;
-      transition:opacity .55s ease,
-                 transform .55s cubic-bezier(.16,1,.3,1),
-                 background .3s, color .3s, border-color .3s, box-shadow .3s;
-    }
-    .book-bar.bb-visible {
-      opacity:1; pointer-events:auto;
-      transform:translateX(-50%) translateY(0);
-    }
-    .book-bar:hover {
-      background:var(--gold);
-      color:var(--bg);
-      border-color:var(--gold);
-      box-shadow:0 6px 36px rgba(198,161,110,.28);
-    }
-    .book-bar svg { width:14px; height:14px; flex-shrink:0; transition:transform .3s; }
-    .book-bar:hover svg { transform:translateX(4px); }
-    /* ── Gold accent dot left of text ── */
-    .book-bar::before {
-      content:'';
-      width:5px; height:5px; border-radius:50%;
-      background:var(--gold); flex-shrink:0;
-      transition:background .3s;
-    }
-    .book-bar:hover::before { background:var(--bg); }
-    @media(max-width:768px){
-      .book-bar { font-size:.55rem; padding:.75rem 1.8rem; letter-spacing:.26em; }
-    }
-    @media(max-width:480px){
-      .book-bar { bottom:1.4rem; font-size:.5rem; padding:.7rem 1.4rem;
-                  letter-spacing:.2em; gap:.5rem; }
-      .book-bar svg { width:12px; height:12px; }
-    }
-  </style>
 </head>
+
 <body>
 
-<!-- LOADING -->
-<div id="loading">
-  <div class="load-logo">ALANYA <span>LUXURY</span> VILLAS</div>
-  <div class="load-track"><div class="load-bar"></div></div>
-</div>
-
-<!-- MOBILE MENU -->
-<div class="mob-menu" id="mobMenu">
-  <button class="mob-close" onclick="closeMob()" aria-label="Kapat">✕</button>
-  <div class="mob-logo">ALANYA <b>LUXURY</b> VILLAS</div>
-  <ul class="mob-nav-links">
-    <li><a href="#about" onclick="closeMob()">Hakkında</a></li>
-    <li><a href="#gallery" onclick="closeMob()">Galeri</a></li>
-    <li><a href="#amenities" onclick="closeMob()">Olanaklar</a></li>
-    <li><a href="#reviews" onclick="closeMob()">Yorumlar</a></li>
-    <li><a href="#attract" onclick="closeMob()">Keşfet</a></li>
-    <li><a href="#contact" class="mob-res" onclick="closeMob()">Rezervasyon</a></li>
-  </ul>
-  <div class="mob-footer">
-    <span class="mob-footer-lbl">Bizi Arayın</span>
-    <a href="tel:+905321397692" class="mob-footer-tel">+90 532 139 76 92</a>
-  </div>
-</div>
-
-<!-- NAV -->
-<nav id="nav">
-  <div class="wrap">
-    <div class="nav-in">
-      <a href="#hero" class="nav-logo">
-        <div class="lg-name">ALANYA <b>LUXURY</b> VILLAS</div>
-        <span class="lg-sub">Alanya · Türkiye</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">Hakkında</a></li>
-        <li><a href="#gallery">Galeri</a></li>
-        <li><a href="#amenities">Olanaklar</a></li>
-        <li><a href="#reviews">Yorumlar</a></li>
-        <li><a href="#attract">Keşfet</a></li>
-        <li><a href="#contact" class="nav-res">Rezervasyon</a></li>
-      </ul>
-      <button class="burger" id="burger" onclick="toggleMob()" aria-label="Menü">
-        <span></span><span></span><span></span>
-      </button>
+    <!-- LOADING -->
+    <div id="loading">
+        <div class="load-logo">ALANYA <span>LUXURY</span> VILLAS</div>
+        <div class="load-track">
+            <div class="load-bar"></div>
+        </div>
     </div>
-  </div>
-</nav>
 
-<!-- ════════════════════════════════════════════════════
+    <!-- MOBILE MENU -->
+    <div class="mob-menu" id="mobMenu">
+        <button class="mob-close" onclick="closeMob()" aria-label="Kapat">✕</button>
+        <div class="mob-logo">ALANYA <b>LUXURY</b> VILLAS</div>
+        <ul class="mob-nav-links">
+            <li><a href="#about" onclick="closeMob()">Hakkında</a></li>
+            <li><a href="#gallery" onclick="closeMob()">Galeri</a></li>
+            <li><a href="#amenities" onclick="closeMob()">Olanaklar</a></li>
+            <li><a href="#reviews" onclick="closeMob()">Yorumlar</a></li>
+            <li><a href="#attract" onclick="closeMob()">Keşfet</a></li>
+            <li><a href="#contact" class="mob-res" onclick="closeMob()">Rezervasyon</a></li>
+        </ul>
+        <div class="mob-footer">
+            <span class="mob-footer-lbl">Bizi Arayın</span>
+            <a href="tel:+905321397692" class="mob-footer-tel">+90 532 139 76 92</a>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="nav">
+        <div class="wrap">
+            <div class="nav-in">
+                <a href="#hero" class="nav-logo">
+                    <div class="lg-name">ALANYA <b>LUXURY</b> VILLAS</div>
+                    <span class="lg-sub">Alanya · Türkiye</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#about">Hakkında</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#amenities">Olanaklar</a></li>
+                    <li><a href="#reviews">Yorumlar</a></li>
+                    <li><a href="#attract">Keşfet</a></li>
+                    <li><a href="#contact" class="nav-res">Rezervasyon</a></li>
+                </ul>
+                <button class="burger" id="burger" onclick="toggleMob()" aria-label="Menü">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ════════════════════════════════════════════════════
      HERO
 ═══════════════════════════════════════════════════════ -->
-<section id="hero">
-  <div class="hero-vid">
-    <video id="hv" autoplay muted loop playsinline preload="metadata"></video>
-  </div>
-  <div class="hero-over"></div>
+    <section id="hero">
+        <div class="hero-vid">
+            <video id="hv" autoplay muted loop playsinline preload="metadata"></video>
+        </div>
+        <div class="hero-over"></div>
 
-  <div class="hero-side">
-    <div class="hs-item">
-      <span class="hs-num">4.5</span>
-      <span class="hs-lbl">Google Puanı</span>
+        <div class="hero-side">
+            <div class="hs-item">
+                <span class="hs-num">4.5</span>
+                <span class="hs-lbl">Google Puanı</span>
+            </div>
+            <div class="hs-item">
+                <span class="hs-num">7</span>
+                <span class="hs-lbl">Özel Villa</span>
+            </div>
+            <div class="hs-item">
+                <span class="hs-num">108+</span>
+                <span class="hs-lbl">Misafir Yorumu</span>
+            </div>
+        </div>
+
+        <div class="hero-cnt">
+            <div class="wrap">
+                <span class="hero-chip">Alanya · Akdeniz · Lüks</span>
+                <h1 class="hero-title">
+                    <span class="hl">Akdeniz'in</span>
+                    <span class="hl"><em>Zirvesinde</em></span>
+                    <span class="hl">Özgürlük</span>
+                </h1>
+                <p class="hero-desc">7 ultra-lüks villanın oluşturduğu bu eşsiz komplekste, Alanya'nın ikonik silueti
+                    eşliğinde sonsuz Akdeniz manzarasının tadını çıkarın.</p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-fill"><span>Rezervasyon Yaptır</span></a>
+                    <a href="#gallery" class="btn"><span>Villaları Keşfet</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span class="scroll-txt">Keşfet</span>
+            <div class="scroll-ln"></div>
+        </div>
+    </section>
+
+    <!-- STRIP -->
+    <div id="strip">
+        <div class="strip-inner" id="stripIn">
+            <span>Özel Havuz</span><span>Deniz Manzarası</span><span>Hamam &amp; Sauna</span>
+            <span>Spor Salonu</span><span>7 Lüks Villa</span><span>Alanya Kalesi Manzarası</span>
+            <span>Özel Havuz</span><span>Deniz Manzarası</span><span>Hamam &amp; Sauna</span>
+            <span>Spor Salonu</span><span>7 Lüks Villa</span><span>Alanya Kalesi Manzarası</span>
+        </div>
     </div>
-    <div class="hs-item">
-      <span class="hs-num">7</span>
-      <span class="hs-lbl">Özel Villa</span>
-    </div>
-    <div class="hs-item">
-      <span class="hs-num">108+</span>
-      <span class="hs-lbl">Misafir Yorumu</span>
-    </div>
-  </div>
 
-  <div class="hero-cnt">
-    <div class="wrap">
-      <span class="hero-chip">Alanya · Akdeniz · Lüks</span>
-      <h1 class="hero-title">
-        <span class="hl">Akdeniz'in</span>
-        <span class="hl"><em>Zirvesinde</em></span>
-        <span class="hl">Özgürlük</span>
-      </h1>
-      <p class="hero-desc">7 ultra-lüks villanın oluşturduğu bu eşsiz komplekste, Alanya'nın ikonik silueti eşliğinde sonsuz Akdeniz manzarasının tadını çıkarın.</p>
-      <div class="hero-ctas">
-        <a href="#contact" class="btn btn-fill"><span>Rezervasyon Yaptır</span></a>
-        <a href="#gallery" class="btn"><span>Villaları Keşfet</span></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-scroll">
-    <span class="scroll-txt">Keşfet</span>
-    <div class="scroll-ln"></div>
-  </div>
-</section>
-
-<!-- STRIP -->
-<div id="strip">
-  <div class="strip-inner" id="stripIn">
-    <span>Özel Havuz</span><span>Deniz Manzarası</span><span>Hamam &amp; Sauna</span>
-    <span>Spor Salonu</span><span>7 Lüks Villa</span><span>Alanya Kalesi Manzarası</span>
-    <span>Özel Havuz</span><span>Deniz Manzarası</span><span>Hamam &amp; Sauna</span>
-    <span>Spor Salonu</span><span>7 Lüks Villa</span><span>Alanya Kalesi Manzarası</span>
-  </div>
-</div>
-
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      ABOUT
 ═══════════════════════════════════════════════════════ -->
-<section id="about">
-  <div class="wrap">
-    <div class="about-grid">
+    <section id="about">
+        <div class="wrap">
+            <div class="about-grid">
 
-      <div class="about-imgs" data-aos="fade-right" data-aos-duration="1000">
-        <img class="about-main" src="images/4912a29d34dbb28c5379b23394bb1326adc0bbd3b198bfcc3e80beb9ff23.webp" alt="Alanya Luxury Villas - Villa Manzarası" width="800" height="533" loading="lazy">
-        <img class="about-accent" src="images/92b216182a54a7c69004aec815da7aebd103e58c180fdee639a0b806c238.webp" alt="Özel Havuz" width="600" height="450" loading="lazy">
-        <div class="about-badge">
-          <span class="badge-n">7</span>
-          <span class="badge-t">Lüks<br>Villa</span>
+                <div class="about-imgs" data-aos="fade-right" data-aos-duration="1000">
+                    <img class="about-main"
+                        src="images/a0a001e2c4fd2fc7b39d0ab6adc5c641ef6a6a065686fab03f9745a8687e.webp"
+                        alt="Alanya Luxury Villas - Villa Manzarası" width="800" height="533" loading="lazy">
+                    <img class="about-accent"
+                        src="images/92b216182a54a7c69004aec815da7aebd103e58c180fdee639a0b806c238.webp" alt="Özel Havuz"
+                        width="600" height="450" loading="lazy">
+                    <div class="about-badge">
+                        <span class="badge-n">7</span>
+                        <span class="badge-t">Lüks<br>Villa</span>
+                    </div>
+                </div>
+
+                <div class="about-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                    <span class="lbl">Hakkımızda</span>
+                    <span class="gl"></span>
+                    <h2 class="hdg">Alanya'nın En <em>Prestijli</em> Villa Kompleksi</h2>
+                    <p class="about-body">
+                        Alanya Kalesi'nin ikonik silueti ve Akdeniz'in masmavi sularının eşsiz bütünlüğüyle
+                        çerçevelenmiş bu özel kompleks, konforlu konaklama ile mimari zarafetin kusursuz buluşma
+                        noktasıdır. Her villa; özel havuzu, modern iç tasarımı ve panoramik terası ile misafirlerimize
+                        ayrıcalıklı bir dünya sunar.
+                    </p>
+                    <p class="about-body" style="margin-top:-1rem;">
+                        Televizyon salonu, ücretsiz yüksek hızlı Wi-Fi, özel otopark ve kişisel transfer hizmetleriyle
+                        donatılmış tesisimizde, her anınız özenle düşünülmüş detaylarla şekillendirilmiştir. Gündüz mavi
+                        suyun parıltısı, akşam ise Alanya'nın ışıklarla nakışlanmış manzarası — tarifsiz bir deneyim.
+                    </p>
+                    <a href="#gallery" class="btn">
+                        <span>Villalarımızı İnceleyin</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16"
+                            height="16">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <div class="about-nums">
+                        <div>
+                            <span class="an-n" data-count="4.5">4.5</span>
+                            <span class="an-l">Google Puanı</span>
+                        </div>
+                        <div>
+                            <span class="an-n" data-count="108">108</span>
+                            <span class="an-l">Misafir Yorumu</span>
+                        </div>
+                        <div>
+                            <span class="an-n" data-count="7">7</span>
+                            <span class="an-l">Özel Villa</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="about-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
-        <span class="lbl">Hakkımızda</span>
-        <span class="gl"></span>
-        <h2 class="hdg">Alanya'nın En <em>Prestijli</em> Villa Kompleksi</h2>
-        <p class="about-body">
-          Alanya Kalesi'nin ikonik silueti ve Akdeniz'in masmavi sularının eşsiz bütünlüğüyle çerçevelenmiş bu özel kompleks, konforlu konaklama ile mimari zarafetin kusursuz buluşma noktasıdır. Her villa; özel havuzu, modern iç tasarımı ve panoramik terası ile misafirlerimize ayrıcalıklı bir dünya sunar.
-        </p>
-        <p class="about-body" style="margin-top:-1rem;">
-          Televizyon salonu, ücretsiz yüksek hızlı Wi-Fi, özel otopark ve kişisel transfer hizmetleriyle donatılmış tesisimizde, her anınız özenle düşünülmüş detaylarla şekillendirilmiştir. Gündüz mavi suyun parıltısı, akşam ise Alanya'nın ışıklarla nakışlanmış manzarası — tarifsiz bir deneyim.
-        </p>
-        <a href="#gallery" class="btn">
-          <span>Villalarımızı İnceleyin</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <div class="about-nums">
-          <div>
-            <span class="an-n" data-count="4.5">4.5</span>
-            <span class="an-l">Google Puanı</span>
-          </div>
-          <div>
-            <span class="an-n" data-count="108">108</span>
-            <span class="an-l">Misafir Yorumu</span>
-          </div>
-          <div>
-            <span class="an-n" data-count="7">7</span>
-            <span class="an-l">Özel Villa</span>
-          </div>
-        </div>
-      </div>
+    <div class="sep"></div>
 
-    </div>
-  </div>
-</section>
-
-<div class="sep"></div>
-
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      GALLERY SLIDER
 ═══════════════════════════════════════════════════════ -->
-<section id="gallery">
-  <div class="wrap">
-    <div class="gal-hd">
-      <div data-aos="fade-right">
-        <span class="lbl">Görsel Deneyim</span>
-        <h2 class="hdg">Villa <em>Galerisi</em></h2>
-      </div>
-      <div class="gal-nav" data-aos="fade-left">
-        <button class="gn-btn" id="gPrev" aria-label="Önceki">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        </button>
-        <button class="gn-btn" id="gNext" aria-label="Sonraki">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
-      </div>
-    </div>
-  </div>
+    <section id="gallery">
+        <div class="wrap">
+            <div class="gal-hd">
+                <div data-aos="fade-right">
+                    <span class="lbl">Görsel Deneyim</span>
+                    <h2 class="hdg">Villa <em>Galerisi</em></h2>
+                </div>
+                <div class="gal-nav" data-aos="fade-left">
+                    <button class="gn-btn" id="gPrev" aria-label="Önceki">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M19 12H5M12 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="gn-btn" id="gNext" aria-label="Sonraki">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-  <div class="wrap" data-aos="fade-up" data-aos-duration="900">
-    <div class="swiper gal-sw" id="galSw">
-      <div class="swiper-wrapper" id="galSlides"></div>
-    </div>
-    <div class="gal-count" id="galCount">01 / 12</div>
-  </div>
-</section>
+        <div class="wrap" data-aos="fade-up" data-aos-duration="900">
+            <div class="swiper gal-sw" id="galSw">
+                <div class="swiper-wrapper" id="galSlides"></div>
+            </div>
+            <div class="gal-count" id="galCount">01 / 12</div>
+        </div>
+    </section>
 
-<!-- MASONRY -->
-<section id="masonry">
-  <div class="wrap">
-    <div class="mas-grid" id="masGrid"></div>
-  </div>
-</section>
+    <!-- MASONRY -->
+    <section id="masonry">
+        <div class="wrap">
+            <div class="mas-grid" id="masGrid"></div>
+        </div>
+    </section>
 
-<div class="sep"></div>
+    <div class="sep"></div>
 
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      VIDEO EXPERIENCE
 ═══════════════════════════════════════════════════════ -->
-<section id="vx">
-  <div class="vx-hero">
-    <video id="vxBg" autoplay muted loop playsinline preload="metadata" class="vx-bg"></video>
-    <div class="vx-over">
-      <div class="vx-title">"Sadece Sizin İçin Tasarlandı"</div>
-      <div class="vx-play" id="vxPlayBtn" title="Videoyu Oynat">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-      </div>
-    </div>
-  </div>
+    <section id="vx">
+        <div class="vx-hero">
+            <video id="vxBg" autoplay muted loop playsinline preload="metadata" class="vx-bg"></video>
+            <div class="vx-over">
+                <div class="vx-title">"Sadece Sizin İçin Tasarlandı"</div>
+                <div class="vx-play" id="vxPlayBtn" title="Videoyu Oynat">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
 
-  <div class="vx-tabs">
-    <div class="wrap">
-      <div class="vx-tab-btns">
-        <button class="vtb act" onclick="switchVTab(0,this)">Villa Deneyimi</button>
-        <button class="vtb" onclick="switchVTab(1,this)">Yeni Sezon</button>
-        <button class="vtb" onclick="switchVTab(2,this)">Lüks Yaşam</button>
-      </div>
-      <div id="vt0" class="vtp act"><video id="vTab0" controls muted preload="metadata" style="width:100%;max-height:68vh;object-fit:cover;"></video></div>
-      <div id="vt1" class="vtp"><video id="vTab1" controls muted preload="metadata" style="width:100%;max-height:68vh;object-fit:cover;"></video></div>
-      <div id="vt2" class="vtp"><video id="vTab2" controls muted preload="metadata" style="width:100%;max-height:68vh;object-fit:cover;"></video></div>
-    </div>
-  </div>
-</section>
+        <div class="vx-tabs">
+            <div class="wrap">
+                <div class="vx-tab-btns">
+                    <button class="vtb act" onclick="switchVTab(0,this)">Villa Deneyimi</button>
+                    <button class="vtb" onclick="switchVTab(1,this)">Yeni Sezon</button>
+                    <button class="vtb" onclick="switchVTab(2,this)">Lüks Yaşam</button>
+                </div>
+                <div id="vt0" class="vtp act"><video id="vTab0" controls muted preload="metadata"
+                        style="width:100%;max-height:68vh;object-fit:cover;"></video></div>
+                <div id="vt1" class="vtp"><video id="vTab1" controls muted preload="metadata"
+                        style="width:100%;max-height:68vh;object-fit:cover;"></video></div>
+                <div id="vt2" class="vtp"><video id="vTab2" controls muted preload="metadata"
+                        style="width:100%;max-height:68vh;object-fit:cover;"></video></div>
+            </div>
+        </div>
+    </section>
 
-<div class="sep"></div>
+    <div class="sep"></div>
 
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      AMENITIES
 ═══════════════════════════════════════════════════════ -->
-<section id="amenities">
-  <div class="wrap">
-    <div class="am-hd" data-aos="fade-up">
-      <span class="lbl">Ayrıcalıklı Olanaklar</span>
-      <h2 class="hdg" style="margin-bottom:1.2rem;">Her <em>İhtiyacınız</em> Düşünüldü</h2>
-      <p class="sub">Eksiksiz bir tatil deneyimi için ihtiyaç duyabileceğiniz her şey; modern teknoloji ve lüks konforu bir arada.</p>
-    </div>
+    <section id="amenities">
+        <div class="wrap">
+            <div class="am-hd" data-aos="fade-up">
+                <span class="lbl">Ayrıcalıklı Olanaklar</span>
+                <h2 class="hdg" style="margin-bottom:1.2rem;">Her <em>İhtiyacınız</em> Düşünüldü</h2>
+                <p class="sub">Eksiksiz bir tatil deneyimi için ihtiyaç duyabileceğiniz her şey; modern teknoloji ve
+                    lüks konforu bir arada.</p>
+            </div>
 
-    <div class="am-grid" data-aos="fade-up" data-aos-delay="100">
+            <div class="am-grid" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
-        <div class="am-nm">Ücretsiz Wi-Fi</div>
-        <div class="am-ds">Yüksek hızlı fiber internet bağlantısı, tüm alanlarda kesintisiz.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path
+                                d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01" />
+                        </svg></div>
+                    <div class="am-nm">Ücretsiz Wi-Fi</div>
+                    <div class="am-ds">Yüksek hızlı fiber internet bağlantısı, tüm alanlarda kesintisiz.</div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 8.5h20M6 3h12l2 5.5H4L6 3zM2 8.5v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-9"/></svg></div>
-        <div class="am-nm">Açık Havuz</div>
-        <div class="am-ds">Her villaya ait özel yüzme havuzu ve şezlong terası.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path d="M2 8.5h20M6 3h12l2 5.5H4L6 3zM2 8.5v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-9" />
+                        </svg></div>
+                    <div class="am-nm">Açık Havuz</div>
+                    <div class="am-ds">Her villaya ait özel yüzme havuzu ve şezlong terası.</div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8zM6 2v6M10 2v6M14 2v6"/></svg></div>
-        <div class="am-nm">Kahvaltı</div>
-        <div class="am-ds">Taze, zengin içerikli Türk kahvaltısı seçeneğiyle güne başlayın.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path
+                                d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8zM6 2v6M10 2v6M14 2v6" />
+                        </svg></div>
+                    <div class="am-nm">Kahvaltı</div>
+                    <div class="am-ds">Taze, zengin içerikli Türk kahvaltısı seçeneğiyle güne başlayın.</div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <div class="am-nm">Ücretsiz Otopark</div>
-        <div class="am-ds">Geniş, güvenli ve kapalı otopark alanı tüm misafirlerimize ücretsiz.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg></div>
+                    <div class="am-nm">Ücretsiz Otopark</div>
+                    <div class="am-ds">Geniş, güvenli ve kapalı otopark alanı tüm misafirlerimize ücretsiz.</div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-        <div class="am-nm">Spa &amp; Hamam</div>
-        <div class="am-ds">Geleneksel Türk hamamı ve modern spa merkeziyle ruhunuzu yenileyin.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg></div>
+                    <div class="am-nm">Spa &amp; Hamam</div>
+                    <div class="am-ds">Geleneksel Türk hamamı ve modern spa merkeziyle ruhunuzu yenileyin.</div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
-        <div class="am-nm">Spor Salonu</div>
-        <div class="am-ds">Profesyonel ekipmanlarla donatılmış modern fitness merkezi.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 8v8M8 12h8" />
+                        </svg></div>
+                    <div class="am-nm">Spor Salonu</div>
+                    <div class="am-ds">Profesyonel ekipmanlarla donatılmış modern fitness merkezi.</div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
-        <div class="am-nm">Havalimanı Transferi</div>
-        <div class="am-ds">Gazipasa ve Antalya havalimanlarından özel araçla VIP transfer.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path d="M3 11l19-9-9 19-2-8-8-2z" />
+                        </svg></div>
+                    <div class="am-nm">Havalimanı Transferi</div>
+                    <div class="am-ds">Gazipasa ve Antalya havalimanlarından özel araçla VIP transfer.</div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-        <div class="am-nm">Restoran &amp; Bar</div>
-        <div class="am-ds">Yerel lezzetler ve özenle seçilmiş içecekler, eşsiz manzara eşliğinde.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M3 9h18M9 21V9" />
+                        </svg></div>
+                    <div class="am-nm">Restoran &amp; Bar</div>
+                    <div class="am-ds">Yerel lezzetler ve özenle seçilmiş içecekler, eşsiz manzara eşliğinde.</div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-        <div class="am-nm">Engellilere Uygun</div>
-        <div class="am-ds">Engelli misafirlerimiz için özel tasarlanmış erişim ve donanımlar.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg></div>
+                    <div class="am-nm">Engellilere Uygun</div>
+                    <div class="am-ds">Engelli misafirlerimiz için özel tasarlanmış erişim ve donanımlar.</div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
-        <div class="am-nm">İş Merkezi</div>
-        <div class="am-ds">Profesyonel çalışma alanı, yazıcı ve toplantı imkânıyla iş kesintisiz sürer.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <path d="M22 6l-10 7L2 6" />
+                        </svg></div>
+                    <div class="am-nm">İş Merkezi</div>
+                    <div class="am-ds">Profesyonel çalışma alanı, yazıcı ve toplantı imkânıyla iş kesintisiz sürer.
+                    </div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 7H4a2 2 0 0 0-2 2v6c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM7 15V9M17 15V9"/></svg></div>
-        <div class="am-nm">Çamaşır Hizmeti</div>
-        <div class="am-ds">Profesyonel çamaşır yıkama ve ütüleme hizmeti kapınıza kadar.</div>
-      </div>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path
+                                d="M20 7H4a2 2 0 0 0-2 2v6c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM7 15V9M17 15V9" />
+                        </svg></div>
+                    <div class="am-nm">Çamaşır Hizmeti</div>
+                    <div class="am-ds">Profesyonel çamaşır yıkama ve ütüleme hizmeti kapınıza kadar.</div>
+                </div>
 
-      <div class="am-card">
-        <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-        <div class="am-nm">Evcil Hayvan Kabul</div>
-        <div class="am-ds">Sevimli dostlarınız da bu lüks tatilde yanınızda olabilir.</div>
-      </div>
-    </div>
-  </div>
-</section>
+                <div class="am-card">
+                    <div class="am-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg></div>
+                    <div class="am-nm">Evcil Hayvan Kabul</div>
+                    <div class="am-ds">Sevimli dostlarınız da bu lüks tatilde yanınızda olabilir.</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="sep"></div>
+    <div class="sep"></div>
 
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      LIFESTYLE
 ═══════════════════════════════════════════════════════ -->
-<section id="life">
-  <div class="wrap">
-    <div class="life-hd" data-aos="fade-up">
-      <span class="lbl">Yaşam Tarzı</span>
-      <h2 class="hdg">Lüksün <em>Dört</em> Mevsimi</h2>
-    </div>
-    <div class="life-grid" data-aos="fade-up" data-aos-delay="100">
-      <div class="li li-tall">
-        <img src="images/6b938a39b86962d1bd875b6a548870cd1404779773336ada679f8bf20dee.webp" alt="Villa Yaşamı" width="800" height="1067" loading="lazy">
-        <div class="li-cap"><span class="li-cap-ttl">Özel Havuz Keyfi</span></div>
-      </div>
-      <div class="li">
-        <img src="images/b2a3a7d11c7e8fb218c9a3c464a765d7cb8b63c87c20e7175a011a7c827f.webp" alt="Manzara" width="800" height="533" loading="lazy">
-        <div class="li-cap"><span class="li-cap-ttl">Panoramik Manzara</span></div>
-      </div>
-      <div class="li">
-        <img src="images/352ef352c3c57867d05afd9f7328c518c6a1a99939d9331a428813416a00.webp" alt="İç Mekan" width="800" height="533" loading="lazy">
-        <div class="li-cap"><span class="li-cap-ttl">Zarif İç Tasarım</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+    <section id="life">
+        <div class="wrap">
+            <div class="life-hd" data-aos="fade-up">
+                <span class="lbl">Yaşam Tarzı</span>
+                <h2 class="hdg">Lüksün <em>Dört</em> Mevsimi</h2>
+            </div>
+            <div class="life-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="li li-tall">
+                    <img src="images/feb997f60982e7ec2127e9384dfb23f38bdf923b160b3394eaeb29802821.webp"
+                        alt="Villa Yaşamı" width="800" height="1067" loading="lazy">
+                    <div class="li-cap"><span class="li-cap-ttl">Özel Havuz Keyfi</span></div>
+                </div>
+                <div class="li">
+                    <img src="images/a0a001e2c4fd2fc7b39d0ab6adc5c641ef6a6a065686fab03f9745a8687e.webp" alt="Manzara"
+                        width="800" height="533" loading="lazy">
+                    <div class="li-cap"><span class="li-cap-ttl">Panoramik Manzara</span></div>
+                </div>
+                <div class="li">
+                    <img src="images/260112f5dd78b9f9905f786269592f8e4758a6162966bc1a6f396585f812.avif" alt="İç Mekan"
+                        width="800" height="533" loading="lazy">
+                    <div class="li-cap"><span class="li-cap-ttl">Zarif İç Tasarım</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="sep"></div>
+    <div class="sep"></div>
 
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      REVIEWS
 ═══════════════════════════════════════════════════════ -->
-<section id="reviews">
-  <div class="wrap">
-    <div class="rv-hd" data-aos="fade-up">
-      <span class="lbl">Misafir Deneyimleri</span>
-      <div class="rv-badge">
-        <span class="rv-n">4.5</span>
-        <div class="rv-stars">★★★★★</div>
-        <span class="rv-cnt">108 Google Yorumu</span>
-      </div>
-      <h2 class="hdg">Misafirlerimiz <em>Ne Diyor?</em></h2>
-    </div>
-
-    <div class="swiper rv-sw" id="rvSw" data-aos="fade-up" data-aos-delay="100">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="rv-card">
-            <div class="rv-ch">
-              <div class="rv-av">K</div>
-              <div><div class="rv-name">Kazım Koca</div><div class="rv-meta">Google · 5 ay önce</div></div>
+    <section id="reviews">
+        <div class="wrap">
+            <div class="rv-hd" data-aos="fade-up">
+                <span class="lbl">Misafir Deneyimleri</span>
+                <div class="rv-badge">
+                    <span class="rv-n">4.5</span>
+                    <div class="rv-stars">★★★★★</div>
+                    <span class="rv-cnt">108 Google Yorumu</span>
+                </div>
+                <h2 class="hdg">Misafirlerimiz <em>Ne Diyor?</em></h2>
             </div>
-            <div class="rv-s">★★★★★</div>
-            <p class="rv-txt">"Alanya Kalesi ve denizin kartpostal gibi bütünleştiği bu manzarada, günün her saatinde farklı bir enerji hissettim. Adeta bir terapi gibi olan bu konaklama deneyimi, gerçekten unutulmazdı. Her anımız özel geçti."</p>
-          </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="rv-card">
-            <div class="rv-ch">
-              <div class="rv-av">S</div>
-              <div><div class="rv-name">Sophia</div><div class="rv-meta">Google · 3 ay önce</div></div>
+            <div class="swiper rv-sw" id="rvSw" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="rv-card">
+                            <div class="rv-ch">
+                                <div class="rv-av">K</div>
+                                <div>
+                                    <div class="rv-name">Kazım Koca</div>
+                                    <div class="rv-meta">Google · 5 ay önce</div>
+                                </div>
+                            </div>
+                            <div class="rv-s">★★★★★</div>
+                            <p class="rv-txt">"Alanya Kalesi ve denizin kartpostal gibi bütünleştiği bu manzarada, günün
+                                her saatinde farklı bir enerji hissettim. Adeta bir terapi gibi olan bu konaklama
+                                deneyimi, gerçekten unutulmazdı. Her anımız özel geçti."</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="rv-card">
+                            <div class="rv-ch">
+                                <div class="rv-av">S</div>
+                                <div>
+                                    <div class="rv-name">Sophia</div>
+                                    <div class="rv-meta">Google · 3 ay önce</div>
+                                </div>
+                            </div>
+                            <div class="rv-s">★★★★★</div>
+                            <p class="rv-txt">"Absolutely wonderful host. Exceptional response time, kind and extremely
+                                helpful. I was able to contact at any time and would receive prompt responses. The villa
+                                exceeded every expectation. Would highly recommend to anyone seeking luxury."</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="rv-card">
+                            <div class="rv-ch">
+                                <div class="rv-av">T</div>
+                                <div>
+                                    <div class="rv-name">Tatiana Skvortsova</div>
+                                    <div class="rv-meta">Google · 1 yıl önce</div>
+                                </div>
+                            </div>
+                            <div class="rv-s">★★★★★</div>
+                            <p class="rv-txt">"Şehirden biraz uzakta, sessiz, temiz hava ve muhteşem manzaralar. 5 yatak
+                                odası, 4 banyo, özel havuzlu bahçe ve şezlonglar — her şey düşünülmüş. Arkadaşlarla 4
+                                gün geçirdik ve kesinlikle geri döneceğiz. Harika bir deneyimdi!"</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="rv-card">
+                            <div class="rv-ch">
+                                <div class="rv-av">F</div>
+                                <div>
+                                    <div class="rv-name">Funda Yıldırım</div>
+                                    <div class="rv-meta">Google · 11 ay önce</div>
+                                </div>
+                            </div>
+                            <div class="rv-s">★★★★★</div>
+                            <p class="rv-txt">"Tek kelime ile muhteşem! İki aile olarak gittiğimiz bu yerden son derece
+                                memnun kaldık. Herkese tavsiye ediyorum. Aile ya da arkadaş grupları için çok ideal bir
+                                ortam. Her şey düşünülmüş, hiç bir eksiklik yoktu."</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="rv-card">
+                            <div class="rv-ch">
+                                <div class="rv-av">M</div>
+                                <div>
+                                    <div class="rv-name">Metin Acar</div>
+                                    <div class="rv-meta">Google · 1 yıl önce</div>
+                                </div>
+                            </div>
+                            <div class="rv-s">★★★★★</div>
+                            <p class="rv-txt">"Alanya'da geçirdiğimiz villa tatili gerçekten unutulmazdı. Konfor ve
+                                lüksün mükemmel buluştuğu bu mekânda iç dizayn son derece şık ve moderndi. Tatilde
+                                ihtiyaç duyulabilecek her şey özenle düşünülmüştü."</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="rv-card">
+                            <div class="rv-ch">
+                                <div class="rv-av">Ş</div>
+                                <div>
+                                    <div class="rv-name">Şeyda Yılmaz</div>
+                                    <div class="rv-meta">Google · 1 yıl önce</div>
+                                </div>
+                            </div>
+                            <div class="rv-s">★★★★★</div>
+                            <p class="rv-txt">"Eşime doğum günü sürprizi yapmak için tercih ettiğimiz bu villa,
+                                beklentilerimizin çok ötesine geçti. Her villanın kendine ait özel, pırıl pırıl temiz
+                                havuzu var. İşletme sahibi tüm isteklerimizde son derece yardımcı oldu."</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="rv-card">
+                            <div class="rv-ch">
+                                <div class="rv-av">S</div>
+                                <div>
+                                    <div class="rv-name">Serkan Şen</div>
+                                    <div class="rv-meta">Google · 4 ay önce</div>
+                                </div>
+                            </div>
+                            <div class="rv-s">★★★★★</div>
+                            <p class="rv-txt">"Harika bir manzara, müthiş bir villa... Alanya şehrine tepeden bakmak ve
+                                sonsuz deniz manzarası gerçekten müthiş. Bu kadar güzel bir mekânı daha önce hiç
+                                görmedim. Kesinlikle tekrar geleceğim!"</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="rv-s">★★★★★</div>
-            <p class="rv-txt">"Absolutely wonderful host. Exceptional response time, kind and extremely helpful. I was able to contact at any time and would receive prompt responses. The villa exceeded every expectation. Would highly recommend to anyone seeking luxury."</p>
-          </div>
         </div>
+    </section>
 
-        <div class="swiper-slide">
-          <div class="rv-card">
-            <div class="rv-ch">
-              <div class="rv-av">T</div>
-              <div><div class="rv-name">Tatiana Skvortsova</div><div class="rv-meta">Google · 1 yıl önce</div></div>
-            </div>
-            <div class="rv-s">★★★★★</div>
-            <p class="rv-txt">"Şehirden biraz uzakta, sessiz, temiz hava ve muhteşem manzaralar. 5 yatak odası, 4 banyo, özel havuzlu bahçe ve şezlonglar — her şey düşünülmüş. Arkadaşlarla 4 gün geçirdik ve kesinlikle geri döneceğiz. Harika bir deneyimdi!"</p>
-          </div>
-        </div>
+    <div class="sep"></div>
 
-        <div class="swiper-slide">
-          <div class="rv-card">
-            <div class="rv-ch">
-              <div class="rv-av">F</div>
-              <div><div class="rv-name">Funda Yıldırım</div><div class="rv-meta">Google · 11 ay önce</div></div>
-            </div>
-            <div class="rv-s">★★★★★</div>
-            <p class="rv-txt">"Tek kelime ile muhteşem! İki aile olarak gittiğimiz bu yerden son derece memnun kaldık. Herkese tavsiye ediyorum. Aile ya da arkadaş grupları için çok ideal bir ortam. Her şey düşünülmüş, hiç bir eksiklik yoktu."</p>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="rv-card">
-            <div class="rv-ch">
-              <div class="rv-av">M</div>
-              <div><div class="rv-name">Metin Acar</div><div class="rv-meta">Google · 1 yıl önce</div></div>
-            </div>
-            <div class="rv-s">★★★★★</div>
-            <p class="rv-txt">"Alanya'da geçirdiğimiz villa tatili gerçekten unutulmazdı. Konfor ve lüksün mükemmel buluştuğu bu mekânda iç dizayn son derece şık ve moderndi. Tatilde ihtiyaç duyulabilecek her şey özenle düşünülmüştü."</p>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="rv-card">
-            <div class="rv-ch">
-              <div class="rv-av">Ş</div>
-              <div><div class="rv-name">Şeyda Yılmaz</div><div class="rv-meta">Google · 1 yıl önce</div></div>
-            </div>
-            <div class="rv-s">★★★★★</div>
-            <p class="rv-txt">"Eşime doğum günü sürprizi yapmak için tercih ettiğimiz bu villa, beklentilerimizin çok ötesine geçti. Her villanın kendine ait özel, pırıl pırıl temiz havuzu var. İşletme sahibi tüm isteklerimizde son derece yardımcı oldu."</p>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="rv-card">
-            <div class="rv-ch">
-              <div class="rv-av">S</div>
-              <div><div class="rv-name">Serkan Şen</div><div class="rv-meta">Google · 4 ay önce</div></div>
-            </div>
-            <div class="rv-s">★★★★★</div>
-            <p class="rv-txt">"Harika bir manzara, müthiş bir villa... Alanya şehrine tepeden bakmak ve sonsuz deniz manzarası gerçekten müthiş. Bu kadar güzel bir mekânı daha önce hiç görmedim. Kesinlikle tekrar geleceğim!"</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section>
-
-<div class="sep"></div>
-
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      ATTRACTIONS
 ═══════════════════════════════════════════════════════ -->
-<section id="attract">
-  <div class="wrap">
-    <div class="att-hd" data-aos="fade-up">
-      <span class="lbl">Çevrenizi Keşfedin</span>
-      <h2 class="hdg">Yakın <em>Çevre</em> Rehberi</h2>
-      <p class="sub" style="margin:0 auto;">Alanya'nın en etkileyici tarihi ve doğal güzellik noktaları, adım adım kapınızın önünde.</p>
-    </div>
-    <div class="att-grid" data-aos="fade-up" data-aos-delay="100">
+    <section id="attract">
+        <div class="wrap">
+            <div class="att-hd" data-aos="fade-up">
+                <span class="lbl">Çevrenizi Keşfedin</span>
+                <h2 class="hdg">Yakın <em>Çevre</em> Rehberi</h2>
+                <p class="sub" style="margin:0 auto;">Alanya'nın en etkileyici tarihi ve doğal güzellik noktaları, adım
+                    adım kapınızın önünde.</p>
+            </div>
+            <div class="att-grid" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="att-card">
-        <div class="att-no">01</div>
-        <div class="att-nm">Alanya Kalesi</div>
-        <div class="att-ds">Şehrin sembolü Selçuklu dönemi kalesi; Kızılkule, 400 sarnıç ve devasa surlarıyla tarihi bir gezi sunar.</div>
-        <div class="att-rt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.7 / 5</div>
-        <div class="att-ti">🕐 Her gün 08:00 – 19:00</div>
-      </div>
+                <div class="att-card">
+                    <div class="att-no">01</div>
+                    <div class="att-nm">Alanya Kalesi</div>
+                    <div class="att-ds">Şehrin sembolü Selçuklu dönemi kalesi; Kızılkule, 400 sarnıç ve devasa
+                        surlarıyla tarihi bir gezi sunar.</div>
+                    <div class="att-rt"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg> 4.7 / 5</div>
+                    <div class="att-ti">🕐 Her gün 08:00 – 19:00</div>
+                </div>
 
-      <div class="att-card">
-        <div class="att-no">02</div>
-        <div class="att-nm">Dim Mağarası</div>
-        <div class="att-ds">Türkiye'nin en güzel mağaralarından biri. Görkemli sarkıt ve dikitleri görmek için rehberli turlara katılın.</div>
-        <div class="att-rt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.6 / 5</div>
-        <div class="att-ti">🕐 Her gün 09:00 – 17:30</div>
-      </div>
+                <div class="att-card">
+                    <div class="att-no">02</div>
+                    <div class="att-nm">Dim Mağarası</div>
+                    <div class="att-ds">Türkiye'nin en güzel mağaralarından biri. Görkemli sarkıt ve dikitleri görmek
+                        için rehberli turlara katılın.</div>
+                    <div class="att-rt"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg> 4.6 / 5</div>
+                    <div class="att-ti">🕐 Her gün 09:00 – 17:30</div>
+                </div>
 
-      <div class="att-card">
-        <div class="att-no">03</div>
-        <div class="att-nm">Damlataş Mağarası</div>
-        <div class="att-ds">1948'de keşfedilen bu mağara; etkileyici oluşumları ve astım hastalarına iyi geldiği inancıyla popülerdir.</div>
-        <div class="att-rt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.2 / 5</div>
-        <div class="att-ti">🕐 Her gün 09:00 – 19:00</div>
-      </div>
+                <div class="att-card">
+                    <div class="att-no">03</div>
+                    <div class="att-nm">Damlataş Mağarası</div>
+                    <div class="att-ds">1948'de keşfedilen bu mağara; etkileyici oluşumları ve astım hastalarına iyi
+                        geldiği inancıyla popülerdir.</div>
+                    <div class="att-rt"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg> 4.2 / 5</div>
+                    <div class="att-ti">🕐 Her gün 09:00 – 19:00</div>
+                </div>
 
-      <div class="att-card">
-        <div class="att-no">04</div>
-        <div class="att-nm">Sealanya Dolphinpark</div>
-        <div class="att-ds">Ailecek keyifli vakit geçirebileceğiniz su parkı. Şnorkelle yüzme ve günlük yunus gösterileriyle dolu bir gün.</div>
-        <div class="att-rt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.5 / 5</div>
-        <div class="att-ti">🕐 Her gün 09:00 – 17:00</div>
-      </div>
+                <div class="att-card">
+                    <div class="att-no">04</div>
+                    <div class="att-nm">Sealanya Dolphinpark</div>
+                    <div class="att-ds">Ailecek keyifli vakit geçirebileceğiniz su parkı. Şnorkelle yüzme ve günlük
+                        yunus gösterileriyle dolu bir gün.</div>
+                    <div class="att-rt"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg> 4.5 / 5</div>
+                    <div class="att-ti">🕐 Her gün 09:00 – 17:00</div>
+                </div>
 
-      <div class="att-card">
-        <div class="att-no">05</div>
-        <div class="att-nm">Cüceler Mağarası</div>
-        <div class="att-ds">Bölgenin doğal güzelliklerini keşfetmek isteyenler için harika bir atmosfere sahip doğa harikası bir mağara.</div>
-        <div class="att-rt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.4 / 5</div>
-        <div class="att-ti">🕐 Her gün 08:30 – 18:30</div>
-      </div>
+                <div class="att-card">
+                    <div class="att-no">05</div>
+                    <div class="att-nm">Cüceler Mağarası</div>
+                    <div class="att-ds">Bölgenin doğal güzelliklerini keşfetmek isteyenler için harika bir atmosfere
+                        sahip doğa harikası bir mağara.</div>
+                    <div class="att-rt"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg> 4.4 / 5</div>
+                    <div class="att-ti">🕐 Her gün 08:30 – 18:30</div>
+                </div>
 
-    </div>
-  </div>
-</section>
+            </div>
+        </div>
+    </section>
 
-<div class="sep"></div>
+    <div class="sep"></div>
 
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      INSTAGRAM
 ═══════════════════════════════════════════════════════ -->
-<section id="insta">
-  <div class="wrap">
-    <div class="ig-hd" data-aos="fade-up">
-      <span class="lbl">Instagram</span>
-      <h2 class="hdg" style="margin-bottom:1.5rem;">Hayatı <em>Güzelce</em> Yaşayın</h2>
-      <a href="https://www.instagram.com/alanyaluxuryvillas" target="_blank" class="ig-handle">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        @alanyaluxuryvillas
-      </a>
-    </div>
-    <div class="ig-grid" data-aos="fade-up" data-aos-delay="100" id="igGrid"></div>
-  </div>
-</section>
+    <section id="insta">
+        <div class="wrap">
+            <div class="ig-hd" data-aos="fade-up">
+                <span class="lbl">Instagram</span>
+                <h2 class="hdg" style="margin-bottom:1.5rem;">Hayatı <em>Güzelce</em> Yaşayın</h2>
+                <a href="https://www.instagram.com/alanyaluxuryvillas" target="_blank" class="ig-handle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                    @alanyaluxuryvillas
+                </a>
+            </div>
+            <div class="ig-grid" data-aos="fade-up" data-aos-delay="100" id="igGrid"></div>
+        </div>
+    </section>
 
-<div class="sep"></div>
+    <div class="sep"></div>
 
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      MAP
 ═══════════════════════════════════════════════════════ -->
-<section id="mapx">
-  <div class="wrap">
-    <div class="map-grid">
-      <div data-aos="fade-right">
-        <span class="lbl">Konumumuz</span>
-        <h2 class="hdg">Alanya'nın <em>Kalbinde</em></h2>
-        <p class="sub" style="margin-top:1rem;">Alanya Kalesi'nin hemen eteklerinde, şehrin en güzel manzarasına sahip bu eşsiz konumda sizi bekliyoruz.</p>
+    <section id="mapx">
+        <div class="wrap">
+            <div class="map-grid">
+                <div data-aos="fade-right">
+                    <span class="lbl">Konumumuz</span>
+                    <h2 class="hdg">Alanya'nın <em>Kalbinde</em></h2>
+                    <p class="sub" style="margin-top:1rem;">Alanya Kalesi'nin hemen eteklerinde, şehrin en güzel
+                        manzarasına sahip bu eşsiz konumda sizi bekliyoruz.</p>
 
-        <div class="map-info-items">
-          <div class="mi">
-            <svg class="mi-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div>
-              <span class="mi-lbl">Adres</span>
-              <span class="mi-val">Küçükhasbahçe, Benliler Sk. NO:66, 07400 Alanya/Antalya</span>
+                    <div class="map-info-items">
+                        <div class="mi">
+                            <svg class="mi-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <div>
+                                <span class="mi-lbl">Adres</span>
+                                <span class="mi-val">Küçükhasbahçe, Benliler Sk. NO:66, 07400 Alanya/Antalya</span>
+                            </div>
+                        </div>
+                        <div class="mi">
+                            <svg class="mi-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.84 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <div>
+                                <span class="mi-lbl">Telefon</span>
+                                <span class="mi-val">+90 532 139 76 92</span>
+                            </div>
+                        </div>
+                        <div class="mi">
+                            <svg class="mi-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                            <div>
+                                <span class="mi-lbl">Giriş / Çıkış</span>
+                                <span class="mi-val">Giriş: 16:00 &nbsp;|&nbsp; Çıkış: 11:30</span>
+                            </div>
+                        </div>
+                        <div class="mi">
+                            <svg class="mi-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            <div>
+                                <span class="mi-lbl">Rezervasyon</span>
+                                <span class="mi-val">7 gün / 24 saat açık</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="150">
+                    <iframe class="map-frame"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400.5567134389851!2d32.00028005987405!3d36.56728295221296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dc9974c5a0717d%3A0xe17bba0e74d2aa80!2sAlanya%20Luxury%20Villas!5e0!3m2!1str!2str!4v1779883830992!5m2!1str!2str"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
-          </div>
-          <div class="mi">
-            <svg class="mi-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.84 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div>
-              <span class="mi-lbl">Telefon</span>
-              <span class="mi-val">+90 532 139 76 92</span>
-            </div>
-          </div>
-          <div class="mi">
-            <svg class="mi-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <div>
-              <span class="mi-lbl">Giriş / Çıkış</span>
-              <span class="mi-val">Giriş: 16:00 &nbsp;|&nbsp; Çıkış: 11:30</span>
-            </div>
-          </div>
-          <div class="mi">
-            <svg class="mi-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            <div>
-              <span class="mi-lbl">Rezervasyon</span>
-              <span class="mi-val">7 gün / 24 saat açık</span>
-            </div>
-          </div>
         </div>
-      </div>
-      <div data-aos="fade-left" data-aos-delay="150">
-        <iframe class="map-frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400.5567134389851!2d32.00028005987405!3d36.56728295221296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dc9974c5a0717d%3A0xe17bba0e74d2aa80!2sAlanya%20Luxury%20Villas!5e0!3m2!1str!2str!4v1779883830992!5m2!1str!2str"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<div class="sep"></div>
+    <div class="sep"></div>
 
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      CONTACT
 ═══════════════════════════════════════════════════════ -->
-<section id="contact">
-  <div class="wrap">
-    <div class="con-grid">
-      <div data-aos="fade-right">
-        <span class="lbl">Rezervasyon &amp; İletişim</span>
-        <h2 class="hdg">Lüksünüzü <em>Rezerve</em> Edin</h2>
-        <p class="sub" style="margin:1.5rem 0 2rem;">Size özel teklif ve müsaitlik durumu için bizimle iletişime geçin. Uzman ekibimiz en kısa sürede yanıt verecektir.</p>
-        <a href="tel:+905321397692" class="btn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="15" height="15"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.84 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span>+90 532 139 76 92</span>
-        </a>
+    <section id="contact">
+        <div class="wrap">
+            <div class="con-grid">
+                <div data-aos="fade-right">
+                    <span class="lbl">Rezervasyon &amp; İletişim</span>
+                    <h2 class="hdg">Lüksünüzü <em>Rezerve</em> Edin</h2>
+                    <p class="sub" style="margin:1.5rem 0 2rem;">Size özel teklif ve müsaitlik durumu için bizimle
+                        iletişime geçin. Uzman ekibimiz en kısa sürede yanıt verecektir.</p>
+                    <a href="tel:+905321397692" class="btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="15"
+                            height="15">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.84 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span>+90 532 139 76 92</span>
+                    </a>
 
-        <div class="con-info">
-          <div class="ci">
-            <span class="mi-lbl">Check-In</span>
-            <span class="mi-val">Saat 16:00 itibarıyla</span>
-          </div>
-          <div class="ci">
-            <span class="mi-lbl">Check-Out</span>
-            <span class="mi-val">Saat 11:30'a kadar</span>
-          </div>
-          <div class="ci">
-            <span class="mi-lbl">Instagram</span>
-            <span class="mi-val">@alanyaluxuryvillas</span>
-          </div>
-          <div class="ci">
-            <span class="mi-lbl">Kredi Kartı</span>
-            <span class="mi-val">Tüm kartlar kabul edilir</span>
-          </div>
+                    <div class="con-info">
+                        <div class="ci">
+                            <span class="mi-lbl">Check-In</span>
+                            <span class="mi-val">Saat 16:00 itibarıyla</span>
+                        </div>
+                        <div class="ci">
+                            <span class="mi-lbl">Check-Out</span>
+                            <span class="mi-val">Saat 11:30'a kadar</span>
+                        </div>
+                        <div class="ci">
+                            <span class="mi-lbl">Instagram</span>
+                            <span class="mi-val">@alanyaluxuryvillas</span>
+                        </div>
+                        <div class="ci">
+                            <span class="mi-lbl">Kredi Kartı</span>
+                            <span class="mi-val">Tüm kartlar kabul edilir</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════
      FOOTER
 ═══════════════════════════════════════════════════════ -->
-<footer id="footer">
-  <div class="wrap">
-    <div class="ft-grid">
-      <div class="ft-brand">
-        <div class="lg-name" style="font-family:'Cormorant Garamond',serif;font-size:1.35rem;letter-spacing:.15em;color:var(--tx);">ALANYA <span style="color:var(--gold);">LUXURY</span> VILLAS</div>
-        <span style="font-size:.5rem;letter-spacing:.5em;color:var(--gold);text-transform:uppercase;">Alanya · Türkiye</span>
-        <p>7 ultra-lüks villanın oluşturduğu bu eşsiz komplekste, sonsuz Akdeniz manzarası ve kişiselleştirilmiş hizmet anlayışıyla ayrıcalıklı bir tatil deneyimi yaşayın.</p>
-        <div class="ft-soc">
-          <a href="https://www.instagram.com/alanyaluxuryvillas" target="_blank" class="ft-sl" title="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="tel:+905321397692" class="ft-sl" title="Ara">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.84 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72c.12.91.29 1.8.51 2.69a2 2 0 0 1-.45 2.11l-.91.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.89.22 1.78.39 2.69.51A2 2 0 0 1 22 16.92z"/></svg>
-          </a>
-          <a href="#mapx" class="ft-sl" title="Konum">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </a>
+    <footer id="footer">
+        <div class="wrap">
+            <div class="ft-grid">
+                <div class="ft-brand">
+                    <div class="lg-name"
+                        style="font-family:'Cormorant Garamond',serif;font-size:1.35rem;letter-spacing:.15em;color:var(--tx);">
+                        ALANYA <span style="color:var(--gold);">LUXURY</span> VILLAS</div>
+                    <span style="font-size:.5rem;letter-spacing:.5em;color:var(--gold);text-transform:uppercase;">Alanya
+                        · Türkiye</span>
+                    <p>7 ultra-lüks villanın oluşturduğu bu eşsiz komplekste, sonsuz Akdeniz manzarası ve
+                        kişiselleştirilmiş hizmet anlayışıyla ayrıcalıklı bir tatil deneyimi yaşayın.</p>
+                    <div class="ft-soc">
+                        <a href="https://www.instagram.com/alanyaluxuryvillas" target="_blank" class="ft-sl"
+                            title="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="tel:+905321397692" class="ft-sl" title="Ara">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.84 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72c.12.91.29 1.8.51 2.69a2 2 0 0 1-.45 2.11l-.91.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.89.22 1.78.39 2.69.51A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </a>
+                        <a href="#mapx" class="ft-sl" title="Konum">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ft-col">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#about">Hakkımızda</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#amenities">Olanaklar</a></li>
+                        <li><a href="#reviews">Yorumlar</a></li>
+                        <li><a href="#attract">Çevre Rehberi</a></li>
+                    </ul>
+                </div>
+
+                <div class="ft-col">
+                    <h4>Hizmetler</h4>
+                    <ul>
+                        <li><a href="#amenities">Özel Havuz</a></li>
+                        <li><a href="#amenities">Spa &amp; Hamam</a></li>
+                        <li><a href="#amenities">Transfer</a></li>
+                        <li><a href="#amenities">Restoran</a></li>
+                        <li><a href="#amenities">Spor Salonu</a></li>
+                    </ul>
+                </div>
+
+                <div class="ft-col">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><a href="tel:+905321397692">+90 532 139 76 92</a></li>
+                        <li><a href="#mapx">Küçükhasbahçe, Alanya</a></li>
+                        <li><a href="https://www.instagram.com/alanyaluxuryvillas"
+                                target="_blank">@alanyaluxuryvillas</a></li>
+                        <li><a href="#contact">Rezervasyon</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ft-bot">
+                <p>© 2025 Alanya Luxury Villas. Tüm hakları saklıdır.</p>
+                <p style="color:var(--gold);font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;">
+                    Küçükhasbahçe · Alanya · Türkiye</p>
+            </div>
         </div>
-      </div>
+    </footer>
 
-      <div class="ft-col">
-        <h4>Hızlı Bağlantılar</h4>
-        <ul>
-          <li><a href="#about">Hakkımızda</a></li>
-          <li><a href="#gallery">Galeri</a></li>
-          <li><a href="#amenities">Olanaklar</a></li>
-          <li><a href="#reviews">Yorumlar</a></li>
-          <li><a href="#attract">Çevre Rehberi</a></li>
-        </ul>
-      </div>
+    <!-- STICKY BOOK NOW BAR -->
+    <a href="#contact" class="book-bar" id="bookBar" aria-label="Rezervasyon Yaptır">
+        <span>Rezervasyon Yaptır</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+    </a>
 
-      <div class="ft-col">
-        <h4>Hizmetler</h4>
-        <ul>
-          <li><a href="#amenities">Özel Havuz</a></li>
-          <li><a href="#amenities">Spa &amp; Hamam</a></li>
-          <li><a href="#amenities">Transfer</a></li>
-          <li><a href="#amenities">Restoran</a></li>
-          <li><a href="#amenities">Spor Salonu</a></li>
-        </ul>
-      </div>
+    <!-- WHATSAPP FAB -->
+    <a href="https://wa.me/905321397692" target="_blank" rel="noopener noreferrer" class="wa-fab"
+        aria-label="WhatsApp ile iletişim">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
 
-      <div class="ft-col">
-        <h4>İletişim</h4>
-        <ul>
-          <li><a href="tel:+905321397692">+90 532 139 76 92</a></li>
-          <li><a href="#mapx">Küçükhasbahçe, Alanya</a></li>
-          <li><a href="https://www.instagram.com/alanyaluxuryvillas" target="_blank">@alanyaluxuryvillas</a></li>
-          <li><a href="#contact">Rezervasyon</a></li>
-        </ul>
-      </div>
-    </div>
+    <!-- SCRIPTS -->
+    <!-- Nav/menu helpers run immediately — needed by HTML onclick attributes -->
 
-    <div class="ft-bot">
-      <p>© 2025 Alanya Luxury Villas. Tüm hakları saklıdır.</p>
-      <p style="color:var(--gold);font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;">Küçükhasbahçe · Alanya · Türkiye</p>
-    </div>
-  </div>
-</footer>
 
-<!-- STICKY BOOK NOW BAR -->
-<a href="#contact" class="book-bar" id="bookBar" aria-label="Rezervasyon Yaptır">
-  <span>Rezervasyon Yaptır</span>
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-    <path d="M5 12h14M12 5l7 7-7 7"/>
-  </svg>
-</a>
+    <!-- CDN libs deferred — download in parallel, execute after parse -->
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
 
-<!-- WHATSAPP FAB -->
-<a href="https://wa.me/905321397692" target="_blank" rel="noopener noreferrer"
-   class="wa-fab" aria-label="WhatsApp ile iletişim">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-  </svg>
-</a>
+    <!-- All init: waits for deferred libs via DOMContentLoaded (deferred scripts run before DCL) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
 
-<!-- SCRIPTS -->
-<!-- Nav/menu helpers run immediately — needed by HTML onclick attributes -->
-<script>
-function toggleMob() {
-  const m = document.getElementById('mobMenu');
-  const b = document.getElementById('burger');
-  const isOpen = m.classList.contains('open');
-  if (isOpen) { closeMob(); } else {
-    m.classList.add('open');
-    b.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-}
-function closeMob() {
-  document.getElementById('mobMenu').classList.remove('open');
-  document.getElementById('burger').classList.remove('open');
-  document.body.style.overflow = '';
-}
-function switchVTab(idx, btn) {
-  document.querySelectorAll('.vtp').forEach((p, i) => p.classList.toggle('act', i === idx));
-  document.querySelectorAll('.vtb').forEach(b => b.classList.remove('act'));
-  btn.classList.add('act');
-  document.querySelectorAll('.vtp video').forEach(v => v.pause());
-}
-/* Sticky nav — passive scroll, no library needed */
-window.addEventListener('scroll', () => {
-  document.getElementById('nav').classList.toggle('stuck', window.scrollY > 60);
-}, { passive: true });
+            // ── ASSET LISTS ──────────────────────────────────────────────
+            const VIDEOS = [
+                "images/" + encodeURIComponent("A villa vacation is not limited to natural beauties alone. In luxurious and comfortable villas, .mp4"),
+                "images/" + encodeURIComponent("Kendinizi her anında özel hissedeceğiniz villalarımız yeni sezonda yeni tasarımı ile sizleri bek.mp4"),
+                "images/" + encodeURIComponent("Sadece sizin için 🏡✨Villa tatili yalnızca doğal güzelliklerle sınırlı değildir. Lüks ve konforl.mp4")
+            ];
 
-/* Sticky Book Now bar — appears after hero scrolled past */
-(function() {
-  const bar  = document.getElementById('bookBar');
-  const hero = document.getElementById('hero');
-  if (!bar || !hero) return;
-  let threshold = 0;
-  function calcThreshold() {
-    threshold = hero.offsetTop + hero.offsetHeight - 80;
-  }
-  calcThreshold();
-  window.addEventListener('scroll', function() {
-    bar.classList.toggle('bb-visible', window.scrollY > threshold);
-  }, { passive: true });
-  window.addEventListener('resize', calcThreshold, { passive: true });
-})();
-</script>
+            const ALL_IMAGES = [
+                "images/92b216182a54a7c69004aec815da7aebd103e58c180fdee639a0b806c238.webp",
+                "images/71908c980bdfa5fc56ed96a5212177710517e6e8f3118fffcddbda5a66ff.webp",
+                "images/a0a001e2c4fd2fc7b39d0ab6adc5c641ef6a6a065686fab03f9745a8687e.webp",
+                "images/0c86d674040788694141b4935ced561a8f020d7d43ed494a087a790057ad.webp",
+                "images/352ef352c3c57867d05afd9f7328c518c6a1a99939d9331a428813416a00.webp",
+                "images/feb997f60982e7ec2127e9384dfb23f38bdf923b160b3394eaeb29802821.webp",
+                "images/22d29e3e1c6147dc4b52764377e0e8a55aff868862ec31f834c7467228da.webp",
+                "images/5d0a3cdb14a053a2ad65c3e96798520e4c47ad1bd342c0db7d71ac1eb13c.webp",
+                "images/630d140407ac00aa5dacd644addda179d50cff7e29b779d1dbece1cc84f7.webp",
+                "images/1897a1cc76a49b39db72e1dcfe6768630d3a78ce2d1e21aa4f811821ed2c.webp",
+                "images/842a19feefb5687c4bc7a27517dbc62d876d3473efc9b262f0962e21433d.webp",
+                "images/95bf1276b30f0339c946be879f21e25b3905fa42f6d4e81f2eea52e75f62.webp",
+                "images/f820e36c7695cd1f8935629c93ace46f108f7a69da0f15108d8c217a29d1.webp",
+                "images/6fcc767c429b61dc36cc479ae0e2934fe4e9b9af6971a1153c92a1207dc7.webp",
+                "images/0446b7110c6104919fc88b4fe7ac4ab00f567cfce783bbc453c89a48f86e.jpeg",
+                "images/5e02b18859d1b20d5124d3f5aedd7e5b4bcc0acfb2ff8976fc094feb2ba1.jpeg",
+                "images/c7c74257c3c45dd0caab31df453888e7a24eca724f0cbe1aea91f58bb006.jpeg",
+                "images/260112f5dd78b9f9905f786269592f8e4758a6162966bc1a6f396585f812.avif",
+                "images/2fc7f49257db211a71e9256aa87d121870d3f3d5557f7d0d7a9348234dc9.avif",
+                "images/4b9d68f540997c7764f8f0e0c69590cc7dda5f32c87b35bb2abfb3655d7e.avif",
+                "images/5949fc156df5f144c9a2535e15c3c100388ec7b3e4c638388401461ebfe9.avif",
+                "images/6a92293b30feb87970c2f055d091564677d3eb32e6674ed246d70c5713c5.avif",
+                "images/bbd64eb1f7f72940394441de7ff2353024cf027be907afab16c95841c489.avif",
+                "images/6b938a39b86962d1bd875b6a548870cd1404779773336ada679f8bf20dee.webp",
+                "images/b2a3a7d11c7e8fb218c9a3c464a765d7cb8b63c87c20e7175a011a7c827f.webp",
+                "images/4912a29d34dbb28c5379b23394bb1326adc0bbd3b198bfcc3e80beb9ff23.webp",
+                "images/c008adc90eb3bb867df9579fb47b73fcdef23572d00881aaaefd714b72e0.avif",
+                "images/d7947ee4907b2a3392cf9f4bde908196978cb70bd33a5a3dd004dd7b5dc8.avif",
+                "images/dbc48b7266c80276fefa2116630ab5d8e13c5f3bb6a1fbcf44cd881bcd11.avif",
+                "images/0222912000kwnl6jiDFB3_W_600_0_R5.webp",
+                "images/0224u12000kwnlyaq14E7_W_600_0_R5.webp",
+                "images/0225w12000k6ut7tq0E9F_W_600_0_R5.webp",
+                "images/0226g12000k6utoxpA547_W_600_0_R5.webp",
+                "images/06d5ab6a26c55fb5f37f0bd754d9a5e9e6ab53606add82c584593d888198.webp"
+            ];
 
-<!-- CDN libs deferred — download in parallel, execute after parse -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+            // Slider images (first 14)
+            const SLIDER_IMGS = ALL_IMAGES.slice(0, 18);
+            // Masonry images (rest, skip tiny 959a)
+            const MASONRY_IMGS = ALL_IMAGES.slice(14).filter(i => !i.includes('959a'));
+            // Instagram images (pick 9 from variety)
+            const IG_IMGS = [
+                ALL_IMAGES[0], ALL_IMAGES[5], ALL_IMAGES[2],
+                ALL_IMAGES[7], ALL_IMAGES[10], ALL_IMAGES[3],
+                ALL_IMAGES[9], ALL_IMAGES[21], ALL_IMAGES[27], ALL_IMAGES[26],
+            ];
 
-<!-- All init: waits for deferred libs via DOMContentLoaded (deferred scripts run before DCL) -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
+            // ── LOADING SCREEN ───────────────────────────────────────────
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    document.getElementById('loading').classList.add('out');
+                    setTimeout(() => document.getElementById('loading').remove(), 1000);
+                }, 2400);
+            });
 
-// ── ASSET LISTS ──────────────────────────────────────────────
-const VIDEOS = [
-  "images/" + encodeURIComponent("A villa vacation is not limited to natural beauties alone. In luxurious and comfortable villas, .mp4"),
-  "images/" + encodeURIComponent("Kendinizi her anında özel hissedeceğiniz villalarımız yeni sezonda yeni tasarımı ile sizleri bek.mp4"),
-  "images/" + encodeURIComponent("Sadece sizin için 🏡✨Villa tatili yalnızca doğal güzelliklerle sınırlı değildir. Lüks ve konforl.mp4")
-];
+            // ── MOBILE MENU BACKDROP + ESC ───────────────────────────────
+            document.getElementById('mobMenu').addEventListener('click', function (e) {
+                if (e.target === this) closeMob();
+            });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMob(); });
 
-const ALL_IMAGES = [
-  "images/4912a29d34dbb28c5379b23394bb1326adc0bbd3b198bfcc3e80beb9ff23.webp",
-  "images/6b938a39b86962d1bd875b6a548870cd1404779773336ada679f8bf20dee.webp",
-  "images/92b216182a54a7c69004aec815da7aebd103e58c180fdee639a0b806c238.webp",
-  "images/b2a3a7d11c7e8fb218c9a3c464a765d7cb8b63c87c20e7175a011a7c827f.webp",
-  "images/352ef352c3c57867d05afd9f7328c518c6a1a99939d9331a428813416a00.webp",
-  "images/0c86d674040788694141b4935ced561a8f020d7d43ed494a087a790057ad.webp",
-  "images/feb997f60982e7ec2127e9384dfb23f38bdf923b160b3394eaeb29802821.webp",
-  "images/22d29e3e1c6147dc4b52764377e0e8a55aff868862ec31f834c7467228da.webp",
-  "images/5d0a3cdb14a053a2ad65c3e96798520e4c47ad1bd342c0db7d71ac1eb13c.webp",
-  "images/630d140407ac00aa5dacd644addda179d50cff7e29b779d1dbece1cc84f7.webp",
-  "images/1897a1cc76a49b39db72e1dcfe6768630d3a78ce2d1e21aa4f811821ed2c.webp",
-  "images/71908c980bdfa5fc56ed96a5212177710517e6e8f3118fffcddbda5a66ff.webp",
-  "images/842a19feefb5687c4bc7a27517dbc62d876d3473efc9b262f0962e21433d.webp",
-  "images/95bf1276b30f0339c946be879f21e25b3905fa42f6d4e81f2eea52e75f62.webp",
-  "images/a0a001e2c4fd2fc7b39d0ab6adc5c641ef6a6a065686fab03f9745a8687e.webp",
-  "images/f820e36c7695cd1f8935629c93ace46f108f7a69da0f15108d8c217a29d1.webp",
-  "images/6fcc767c429b61dc36cc479ae0e2934fe4e9b9af6971a1153c92a1207dc7.webp",
-  "images/0446b7110c6104919fc88b4fe7ac4ab00f567cfce783bbc453c89a48f86e.jpeg",
-  "images/5e02b18859d1b20d5124d3f5aedd7e5b4bcc0acfb2ff8976fc094feb2ba1.jpeg",
-  "images/c7c74257c3c45dd0caab31df453888e7a24eca724f0cbe1aea91f58bb006.jpeg",
-  "images/260112f5dd78b9f9905f786269592f8e4758a6162966bc1a6f396585f812.avif",
-  "images/2fc7f49257db211a71e9256aa87d121870d3f3d5557f7d0d7a9348234dc9.avif",
-  "images/4b9d68f540997c7764f8f0e0c69590cc7dda5f32c87b35bb2abfb3655d7e.avif",
-  "images/5949fc156df5f144c9a2535e15c3c100388ec7b3e4c638388401461ebfe9.avif",
-  "images/6a92293b30feb87970c2f055d091564677d3eb32e6674ed246d70c5713c5.avif",
-  "images/bbd64eb1f7f72940394441de7ff2353024cf027be907afab16c95841c489.avif",
-  "images/c008adc90eb3bb867df9579fb47b73fcdef23572d00881aaaefd714b72e0.avif",
-  "images/d7947ee4907b2a3392cf9f4bde908196978cb70bd33a5a3dd004dd7b5dc8.avif",
-  "images/dbc48b7266c80276fefa2116630ab5d8e13c5f3bb6a1fbcf44cd881bcd11.avif",
-  "images/0222912000kwnl6jiDFB3_W_600_0_R5.webp",
-  "images/0224u12000kwnlyaq14E7_W_600_0_R5.webp",
-  "images/0225w12000k6ut7tq0E9F_W_600_0_R5.webp",
-  "images/0226g12000k6utoxpA547_W_600_0_R5.webp",
-  "images/06d5ab6a26c55fb5f37f0bd754d9a5e9e6ab53606add82c584593d888198.webp"
-];
+            // ── SET VIDEO SOURCES ────────────────────────────────────────
+            document.getElementById('hv').src = VIDEOS[1];    // hero bg
+            document.getElementById('vxBg').src = VIDEOS[2];  // vx section bg
+            document.getElementById('vTab0').src = VIDEOS[0];
+            document.getElementById('vTab1').src = VIDEOS[1];
+            document.getElementById('vTab2').src = VIDEOS[2];
 
-// Slider images (first 14)
-const SLIDER_IMGS = ALL_IMAGES.slice(0, 14);
-// Masonry images (rest, skip tiny 959a)
-const MASONRY_IMGS = ALL_IMAGES.slice(14).filter(i => !i.includes('959a'));
-// Instagram images (pick 9 from variety)
-const IG_IMGS = [
-  ALL_IMAGES[0], ALL_IMAGES[5], ALL_IMAGES[6],
-  ALL_IMAGES[7], ALL_IMAGES[10], ALL_IMAGES[12],
-  ALL_IMAGES[20], ALL_IMAGES[21], ALL_IMAGES[25]
-];
-
-// ── LOADING SCREEN ───────────────────────────────────────────
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.getElementById('loading').classList.add('out');
-    setTimeout(() => document.getElementById('loading').remove(), 1000);
-  }, 2400);
-});
-
-// ── MOBILE MENU BACKDROP + ESC ───────────────────────────────
-document.getElementById('mobMenu').addEventListener('click', function(e){
-  if(e.target === this) closeMob();
-});
-document.addEventListener('keydown', e => { if(e.key === 'Escape') closeMob(); });
-
-// ── SET VIDEO SOURCES ────────────────────────────────────────
-document.getElementById('hv').src = VIDEOS[1];    // hero bg
-document.getElementById('vxBg').src = VIDEOS[2];  // vx section bg
-document.getElementById('vTab0').src = VIDEOS[0];
-document.getElementById('vTab1').src = VIDEOS[1];
-document.getElementById('vTab2').src = VIDEOS[2];
-
-// ── GALLERY SLIDER ───────────────────────────────────────────
-const galSlides = document.getElementById('galSlides');
-SLIDER_IMGS.forEach((src, i) => {
-  galSlides.innerHTML += `
+            // ── GALLERY SLIDER ───────────────────────────────────────────
+            const galSlides = document.getElementById('galSlides');
+            SLIDER_IMGS.forEach((src, i) => {
+                galSlides.innerHTML += `
     <div class="swiper-slide">
       <a href="${src}" class="glightbox gal-si" data-gallery="main-gallery" data-type="image">
-        <img src="${src}" alt="Villa ${i+1}" width="800" height="533" loading="lazy">
+        <img src="${src}" alt="Villa ${i + 1}" width="800" height="533" loading="lazy">
         <div class="gal-ov">
           <div class="gal-exp">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
@@ -1960,93 +989,94 @@ SLIDER_IMGS.forEach((src, i) => {
         </div>
       </a>
     </div>`;
-});
+            });
 
-const galSw = new Swiper('#galSw', {
-  slidesPerView: 1.15,
-  spaceBetween: 16,
-  speed: 750,
-  grabCursor: true,
-  navigation: { nextEl: '#gNext', prevEl: '#gPrev' },
-  breakpoints: {
-    640:  { slidesPerView: 1.5 },
-    1024: { slidesPerView: 2.1 },
-    1280: { slidesPerView: 2.5 }
-  },
-  on: {
-    slideChange(sw) {
-      const cur = String(sw.realIndex + 1).padStart(2, '0');
-      const tot = String(SLIDER_IMGS.length).padStart(2, '0');
-      document.getElementById('galCount').textContent = `${cur} / ${tot}`;
-    }
-  }
-});
+            const galSw = new Swiper('#galSw', {
+                slidesPerView: 1.15,
+                spaceBetween: 16,
+                speed: 750,
+                grabCursor: true,
+                navigation: { nextEl: '#gNext', prevEl: '#gPrev' },
+                breakpoints: {
+                    640: { slidesPerView: 1.5 },
+                    1024: { slidesPerView: 2.1 },
+                    1280: { slidesPerView: 2.5 }
+                },
+                on: {
+                    slideChange(sw) {
+                        const cur = String(sw.realIndex + 1).padStart(2, '0');
+                        const tot = String(SLIDER_IMGS.length).padStart(2, '0');
+                        document.getElementById('galCount').textContent = `${cur} / ${tot}`;
+                    }
+                }
+            });
 
-// ── MASONRY ──────────────────────────────────────────────────
-const masGrid = document.getElementById('masGrid');
-MASONRY_IMGS.forEach((src, i) => {
-  masGrid.innerHTML += `
+            // ── MASONRY ──────────────────────────────────────────────────
+            const masGrid = document.getElementById('masGrid');
+            MASONRY_IMGS.forEach((src, i) => {
+                masGrid.innerHTML += `
     <div class="mas-it">
       <a href="${src}" class="glightbox" data-gallery="main-gallery" data-type="image">
-        <img src="${src}" alt="Villa ${i+1}" width="800" height="533" loading="lazy">
+        <img src="${src}" alt="Villa ${i + 1}" width="800" height="533" loading="lazy">
         <div class="mas-ov">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
         </div>
       </a>
     </div>`;
-});
+            });
 
-// ── INSTAGRAM GRID ───────────────────────────────────────────
-const igGrid = document.getElementById('igGrid');
-IG_IMGS.forEach((src, i) => {
-  igGrid.innerHTML += `
+            // ── INSTAGRAM GRID ───────────────────────────────────────────
+            const igGrid = document.getElementById('igGrid');
+            IG_IMGS.forEach((src, i) => {
+                igGrid.innerHTML += `
     <div class="ig-it">
       <a href="${src}" class="glightbox" data-gallery="ig-gallery" data-type="image">
-        <img src="${src}" alt="Instagram ${i+1}" width="600" height="600" loading="lazy">
+        <img src="${src}" alt="Instagram ${i + 1}" width="600" height="600" loading="lazy">
         <div class="ig-ov">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </div>
       </a>
     </div>`;
-});
+            });
 
-// ── REVIEWS SWIPER ───────────────────────────────────────────
-new Swiper('#rvSw', {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  speed: 700,
-  grabCursor: true,
-  pagination: { el: '.swiper-pagination', clickable: true },
-  autoplay: { delay: 5000, pauseOnMouseEnter: true },
-  breakpoints: {
-    768:  { slidesPerView: 2 },
-    1200: { slidesPerView: 3 }
-  }
-});
+            // ── REVIEWS SWIPER ───────────────────────────────────────────
+            new Swiper('#rvSw', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                speed: 700,
+                grabCursor: true,
+                pagination: { el: '.swiper-pagination', clickable: true },
+                autoplay: { delay: 5000, pauseOnMouseEnter: true },
+                breakpoints: {
+                    768: { slidesPerView: 2 },
+                    1200: { slidesPerView: 3 }
+                }
+            });
 
-// ── GLIGHTBOX ────────────────────────────────────────────────
-GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true, autoplayVideos: false });
+            // ── GLIGHTBOX ────────────────────────────────────────────────
+            GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true, autoplayVideos: false });
 
-// ── VIDEO TABS (also defined globally above for onclick — no-op here) ────
+            // ── VIDEO TABS (also defined globally above for onclick — no-op here) ────
 
-// fullscreen play button for vx hero
-document.getElementById('vxPlayBtn').addEventListener('click', () => {
-  const v = document.getElementById('vxBg');
-  if (v.requestFullscreen) v.requestFullscreen();
-  v.muted = false;
-  v.play();
-});
+            // fullscreen play button for vx hero
+            document.getElementById('vxPlayBtn').addEventListener('click', () => {
+                const v = document.getElementById('vxBg');
+                if (v.requestFullscreen) v.requestFullscreen();
+                v.muted = false;
+                v.play();
+            });
 
-// ── AOS ──────────────────────────────────────────────────────
-AOS.init({ duration: 900, easing: 'ease-out-cubic', once: true, offset: 80 });
+            // ── AOS ──────────────────────────────────────────────────────
+            AOS.init({ duration: 900, easing: 'ease-out-cubic', once: true, offset: 80 });
 
-// ── STRIP DUPLICATE for seamless scroll ─────────────────────
-(function() {
-  const si = document.getElementById('stripIn');
-  si.innerHTML += si.innerHTML;
-})();
+            // ── STRIP DUPLICATE for seamless scroll ─────────────────────
+            (function () {
+                const si = document.getElementById('stripIn');
+                si.innerHTML += si.innerHTML;
+            })();
 
-}); // end DOMContentLoaded
-</script>
+        }); // end DOMContentLoaded
+    </script>
 </body>
+
 </html>

@@ -901,8 +901,8 @@
 
             // ── ASSET LISTS ──────────────────────────────────────────────
             const VIDEOS = [
-                "images/" + encodeURIComponent("A villa vacation is not limited to natural beauties alone. In luxurious and comfortable villas, .mp4"),
                 "images/" + encodeURIComponent("Kendinizi her anında özel hissedeceğiniz villalarımız yeni sezonda yeni tasarımı ile sizleri bek.mp4"),
+                "images/" + encodeURIComponent("yenilenme.mp4"),
                 "images/" + encodeURIComponent("Sadece sizin için 🏡✨Villa tatili yalnızca doğal güzelliklerle sınırlı değildir. Lüks ve konforl.mp4")
             ];
 
@@ -969,7 +969,7 @@
             document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMob(); });
 
             // ── SET VIDEO SOURCES ────────────────────────────────────────
-            document.getElementById('hv').src = VIDEOS[1];    // hero bg
+            document.getElementById('hv').src = VIDEOS[0];    // hero bg
             document.getElementById('vxBg').src = VIDEOS[2];  // vx section bg
             document.getElementById('vTab0').src = VIDEOS[0];
             document.getElementById('vTab1').src = VIDEOS[1];

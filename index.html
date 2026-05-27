@@ -10,7 +10,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Async font loading — eliminates render-blocking -->
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
@@ -681,34 +684,14 @@
       content:''; position:absolute; top:0; left:0; right:0;
       height:1px; background:linear-gradient(to right,transparent,var(--gold),transparent);
     }
-    .con-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:8rem; align-items:start; }
-    .con-form {
-      background:var(--bg3); border:1px solid var(--bdr); padding:3rem;
+    /* Single-column contact — form removed */
+    .con-grid { max-width:820px; margin:0 auto; }
+    .con-info {
+      margin-top:2.5rem;
+      display:grid; grid-template-columns:1fr 1fr; column-gap:4rem;
     }
-    .con-form-ttl {
-      font-family:'Cormorant Garamond',serif; font-size:2.1rem;
-      font-weight:300; color:var(--tx); margin-bottom:2rem;
-    }
-    .fg { margin-bottom:1.4rem; }
-    .fl {
-      display:block; font-size:.58rem; letter-spacing:.3em;
-      color:var(--gold); text-transform:uppercase; margin-bottom:.45rem;
-    }
-    .fi {
-      width:100%; background:transparent; border:1px solid var(--bdr);
-      padding:.8rem 1rem; color:var(--tx); font-family:'Montserrat',sans-serif;
-      font-size:.83rem; font-weight:300; outline:none; transition:border-color .3s;
-    }
-    .fi:focus { border-color:var(--gold); }
-    .fi::placeholder { color:var(--txd); }
-    textarea.fi { resize:vertical; min-height:110px; }
-    .fr { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-    .con-info { padding-top:.5rem; }
-    .ci { padding:2rem 0; border-bottom:1px solid var(--bdr); }
-    .ci:first-child { border-top:1px solid var(--bdr); }
-    @media(max-width:1020px){
-      .con-grid{ grid-template-columns:1fr; gap:4rem; }
-    }
+    .ci { padding:1.5rem 0; border-bottom:1px solid var(--bdr); }
+    .ci:nth-child(1),.ci:nth-child(2) { border-top:1px solid var(--bdr); }
 
     /* ── FOOTER ─────────────────────────────────────────── */
     #footer { background:#080808; padding:5.5rem 0 3rem; border-top:1px solid var(--bdr); }
@@ -934,15 +917,8 @@
     }
 
     /* ── CONTACT MOBILE ── */
-    @media(max-width:768px){
-      .con-grid { gap:3rem; }
-      .con-form { padding:2rem 1.5rem; }
-      .fr       { grid-template-columns:1fr; }
-    }
-    @media(max-width:480px){
-      .con-form  { padding:1.75rem 1.2rem; }
-      .fi        { font-size:.78rem; padding:.7rem .85rem; }
-      .con-form-ttl { font-size:1.7rem; }
+    @media(max-width:640px){
+      .con-info { grid-template-columns:1fr; column-gap:0; }
     }
 
     /* ── FOOTER MOBILE ── */
@@ -1019,6 +995,46 @@
     /* ── SMOOTH BUTTON TOUCH ── */
     @media(max-width:768px){
       .btn { padding:.85rem 1.8rem; font-size:.58rem; }
+    }
+
+    /* ══════════════════════════════════════════════════════
+       WHATSAPP FLOATING ACTION BUTTON
+    ══════════════════════════════════════════════════════ */
+    .wa-fab {
+      position:fixed; bottom:2rem; right:2rem; z-index:380;
+      width:52px; height:52px; border-radius:50%;
+      background:rgba(11,11,11,.97);
+      border:1px solid rgba(198,161,110,.28);
+      display:flex; align-items:center; justify-content:center;
+      cursor:pointer; text-decoration:none;
+      box-shadow:0 4px 24px rgba(0,0,0,.45);
+      backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+      transition:transform .38s cubic-bezier(.16,1,.3,1),
+                 box-shadow .38s ease,
+                 border-color .38s ease;
+    }
+    .wa-fab:hover {
+      transform:scale(1.11);
+      box-shadow:0 6px 32px rgba(198,161,110,.22), 0 0 0 1px rgba(198,161,110,.35);
+      border-color:rgba(198,161,110,.6);
+    }
+    .wa-fab svg { width:26px; height:26px; fill:var(--gold); transition:fill .3s; }
+    .wa-fab:hover svg { fill:var(--gold2); }
+    /* Subtle online-indicator dot (gold, slow pulse) */
+    .wa-fab::after {
+      content:''; position:absolute; top:4px; right:4px;
+      width:9px; height:9px; border-radius:50%;
+      background:var(--gold);
+      border:1.5px solid rgba(11,11,11,.95);
+      animation:waPulse 2.8s ease-in-out infinite;
+    }
+    @keyframes waPulse {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:.45; transform:scale(.8); }
+    }
+    @media(max-width:480px){
+      .wa-fab { bottom:1.4rem; right:1.2rem; width:48px; height:48px; }
+      .wa-fab svg { width:23px; height:23px; }
     }
   </style>
 </head>
@@ -1135,8 +1151,8 @@
     <div class="about-grid">
 
       <div class="about-imgs" data-aos="fade-right" data-aos-duration="1000">
-        <img class="about-main" src="images/4912a29d34dbb28c5379b23394bb1326adc0bbd3b198bfcc3e80beb9ff23.webp" alt="Alanya Luxury Villas - Villa Manzarası">
-        <img class="about-accent" src="images/92b216182a54a7c69004aec815da7aebd103e58c180fdee639a0b806c238.webp" alt="Özel Havuz">
+        <img class="about-main" src="images/4912a29d34dbb28c5379b23394bb1326adc0bbd3b198bfcc3e80beb9ff23.webp" alt="Alanya Luxury Villas - Villa Manzarası" width="800" height="533" loading="lazy">
+        <img class="about-accent" src="images/92b216182a54a7c69004aec815da7aebd103e58c180fdee639a0b806c238.webp" alt="Özel Havuz" width="600" height="450" loading="lazy">
         <div class="about-badge">
           <span class="badge-n">7</span>
           <span class="badge-t">Lüks<br>Villa</span>
@@ -1348,15 +1364,15 @@
     </div>
     <div class="life-grid" data-aos="fade-up" data-aos-delay="100">
       <div class="li li-tall">
-        <img src="images/6b938a39b86962d1bd875b6a548870cd1404779773336ada679f8bf20dee.webp" alt="Villa Yaşamı">
+        <img src="images/6b938a39b86962d1bd875b6a548870cd1404779773336ada679f8bf20dee.webp" alt="Villa Yaşamı" width="800" height="1067" loading="lazy">
         <div class="li-cap"><span class="li-cap-ttl">Özel Havuz Keyfi</span></div>
       </div>
       <div class="li">
-        <img src="images/b2a3a7d11c7e8fb218c9a3c464a765d7cb8b63c87c20e7175a011a7c827f.webp" alt="Manzara">
+        <img src="images/b2a3a7d11c7e8fb218c9a3c464a765d7cb8b63c87c20e7175a011a7c827f.webp" alt="Manzara" width="800" height="533" loading="lazy">
         <div class="li-cap"><span class="li-cap-ttl">Panoramik Manzara</span></div>
       </div>
       <div class="li">
-        <img src="images/352ef352c3c57867d05afd9f7328c518c6a1a99939d9331a428813416a00.webp" alt="İç Mekan">
+        <img src="images/352ef352c3c57867d05afd9f7328c518c6a1a99939d9331a428813416a00.webp" alt="İç Mekan" width="800" height="533" loading="lazy">
         <div class="li-cap"><span class="li-cap-ttl">Zarif İç Tasarım</span></div>
       </div>
     </div>
@@ -1634,51 +1650,6 @@
         </div>
       </div>
 
-      <div data-aos="fade-left" data-aos-delay="150">
-        <div class="con-form">
-          <div class="con-form-ttl">Rezervasyon Talebi</div>
-          <form id="bookForm" onsubmit="sendForm(event)">
-            <div class="fr">
-              <div class="fg">
-                <label class="fl">Ad Soyad</label>
-                <input type="text" class="fi" placeholder="Adınız" required>
-              </div>
-              <div class="fg">
-                <label class="fl">Telefon</label>
-                <input type="tel" class="fi" placeholder="+90 5xx xxx xx xx">
-              </div>
-            </div>
-            <div class="fg">
-              <label class="fl">E-posta</label>
-              <input type="email" class="fi" placeholder="email@example.com" required>
-            </div>
-            <div class="fr">
-              <div class="fg">
-                <label class="fl">Giriş Tarihi</label>
-                <input type="date" class="fi">
-              </div>
-              <div class="fg">
-                <label class="fl">Çıkış Tarihi</label>
-                <input type="date" class="fi">
-              </div>
-            </div>
-            <div class="fg">
-              <label class="fl">Kişi Sayısı</label>
-              <select class="fi" style="appearance:none;cursor:pointer;">
-                <option>2 Kişi</option><option>4 Kişi</option><option>6 Kişi</option>
-                <option>8 Kişi</option><option>10 Kişi</option><option>12+ Kişi</option>
-              </select>
-            </div>
-            <div class="fg">
-              <label class="fl">Notlar</label>
-              <textarea class="fi" placeholder="Özel istekleriniz veya sorularınız..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-fill" style="width:100%;justify-content:center;">
-              <span>Rezervasyon Talebi Gönder</span>
-            </button>
-          </form>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -1746,12 +1717,53 @@
   </div>
 </footer>
 
-<!-- SCRIPTS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<!-- WHATSAPP FAB -->
+<a href="https://wa.me/905321397692" target="_blank" rel="noopener noreferrer"
+   class="wa-fab" aria-label="WhatsApp ile iletişim">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
 
+<!-- SCRIPTS -->
+<!-- Nav/menu helpers run immediately — needed by HTML onclick attributes -->
 <script>
+function toggleMob() {
+  const m = document.getElementById('mobMenu');
+  const b = document.getElementById('burger');
+  const isOpen = m.classList.contains('open');
+  if (isOpen) { closeMob(); } else {
+    m.classList.add('open');
+    b.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+function closeMob() {
+  document.getElementById('mobMenu').classList.remove('open');
+  document.getElementById('burger').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function switchVTab(idx, btn) {
+  document.querySelectorAll('.vtp').forEach((p, i) => p.classList.toggle('act', i === idx));
+  document.querySelectorAll('.vtb').forEach(b => b.classList.remove('act'));
+  btn.classList.add('act');
+  document.querySelectorAll('.vtp video').forEach(v => v.pause());
+}
+/* Sticky nav — passive scroll, no library needed */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('stuck', window.scrollY > 60);
+}, { passive: true });
+</script>
+
+<!-- CDN libs deferred — download in parallel, execute after parse -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+
+<!-- All init: waits for deferred libs via DOMContentLoaded (deferred scripts run before DCL) -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
 // ── ASSET LISTS ──────────────────────────────────────────────
 const VIDEOS = [
   "images/" + encodeURIComponent("A villa vacation is not limited to natural beauties alone. In luxurious and comfortable villas, .mp4"),
@@ -1815,33 +1827,10 @@ window.addEventListener('load', () => {
   }, 2400);
 });
 
-// ── NAV SCROLL ───────────────────────────────────────────────
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('stuck', window.scrollY > 60);
-}, { passive: true });
-
-// ── MOBILE MENU ──────────────────────────────────────────────
-function toggleMob() {
-  const m = document.getElementById('mobMenu');
-  const b = document.getElementById('burger');
-  const isOpen = m.classList.contains('open');
-  if (isOpen) { closeMob(); } else {
-    m.classList.add('open');
-    b.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-}
-function closeMob() {
-  document.getElementById('mobMenu').classList.remove('open');
-  document.getElementById('burger').classList.remove('open');
-  document.body.style.overflow = '';
-}
-// Close mobile menu when clicking backdrop
+// ── MOBILE MENU BACKDROP + ESC ───────────────────────────────
 document.getElementById('mobMenu').addEventListener('click', function(e){
   if(e.target === this) closeMob();
 });
-// Close on ESC key
 document.addEventListener('keydown', e => { if(e.key === 'Escape') closeMob(); });
 
 // ── SET VIDEO SOURCES ────────────────────────────────────────
@@ -1857,7 +1846,7 @@ SLIDER_IMGS.forEach((src, i) => {
   galSlides.innerHTML += `
     <div class="swiper-slide">
       <a href="${src}" class="glightbox gal-si" data-gallery="main-gallery" data-type="image">
-        <img src="${src}" alt="Villa ${i+1}" loading="lazy">
+        <img src="${src}" alt="Villa ${i+1}" width="800" height="533" loading="lazy">
         <div class="gal-ov">
           <div class="gal-exp">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
@@ -1893,7 +1882,7 @@ MASONRY_IMGS.forEach((src, i) => {
   masGrid.innerHTML += `
     <div class="mas-it">
       <a href="${src}" class="glightbox" data-gallery="main-gallery" data-type="image">
-        <img src="${src}" alt="Villa ${i+1}" loading="lazy">
+        <img src="${src}" alt="Villa ${i+1}" width="600" height="800" loading="lazy">
         <div class="mas-ov">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
         </div>
@@ -1907,7 +1896,7 @@ IG_IMGS.forEach((src, i) => {
   igGrid.innerHTML += `
     <div class="ig-it">
       <a href="${src}" class="glightbox" data-gallery="ig-gallery" data-type="image">
-        <img src="${src}" alt="Instagram ${i+1}" loading="lazy">
+        <img src="${src}" alt="Instagram ${i+1}" width="600" height="600" loading="lazy">
         <div class="ig-ov">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </div>
@@ -1932,14 +1921,7 @@ new Swiper('#rvSw', {
 // ── GLIGHTBOX ────────────────────────────────────────────────
 GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true, autoplayVideos: false });
 
-// ── VIDEO TABS ───────────────────────────────────────────────
-function switchVTab(idx, btn) {
-  document.querySelectorAll('.vtp').forEach((p, i) => p.classList.toggle('act', i === idx));
-  document.querySelectorAll('.vtb').forEach(b => b.classList.remove('act'));
-  btn.classList.add('act');
-  // pause all, let user play
-  document.querySelectorAll('.vtp video').forEach(v => v.pause());
-}
+// ── VIDEO TABS (also defined globally above for onclick — no-op here) ────
 
 // fullscreen play button for vx hero
 document.getElementById('vxPlayBtn').addEventListener('click', () => {
@@ -1952,20 +1934,13 @@ document.getElementById('vxPlayBtn').addEventListener('click', () => {
 // ── AOS ──────────────────────────────────────────────────────
 AOS.init({ duration: 900, easing: 'ease-out-cubic', once: true, offset: 80 });
 
-// ── FORM ─────────────────────────────────────────────────────
-function sendForm(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('button[type=submit]');
-  btn.innerHTML = '<span>Teşekkürler! En kısa sürede dönüş yapacağız.</span>';
-  btn.disabled = true;
-  btn.style.opacity = '.7';
-}
-
 // ── STRIP DUPLICATE for seamless scroll ─────────────────────
 (function() {
   const si = document.getElementById('stripIn');
   si.innerHTML += si.innerHTML;
 })();
+
+}); // end DOMContentLoaded
 </script>
 </body>
 </html>
